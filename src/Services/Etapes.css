@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: orange;
+  padding: 0.5em;
+  color: blue;
+  height: 0.5px;
+  width: auto;
+}
+
+main {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  main {
+  margin-top: 90em;
+}
+}

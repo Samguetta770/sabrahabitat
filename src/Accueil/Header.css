@@ -1,0 +1,207 @@
+/* Header.css */
+
+/* Appliquer la police Roboto à tout le document */
+
+.header_header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1C382D;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 2em; /* Réduction du padding en haut et en bas */
+  position: relative; /* Ajouté pour positionner le bouton Menu */
+}
+
+.header-content_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container_header {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image_header {
+  width: 6em; /* Taille du logo par défaut pour les petits écrans */
+  height: auto;
+}
+
+.partner-logos_header {
+  display: flex;
+  gap: 2em; /* Augmenter l'espace entre les liens */
+  align-items: center; /* Aligner verticalement les liens avec le logo */
+  margin-left: auto; /* Pousser les liens à droite */
+}
+
+.header-link_header {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  transition: color 0.3s;
+  letter-spacing: 0.1em; /* Ajouter de l'espace entre les lettres */
+  word-spacing: 0.2em; /* Ajouter de l'espace entre les mots */
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center; /* Alignement des flèches */
+}
+
+.header-link_header:hover {
+  color: #22493A;
+
+}
+
+.show-nav-button-container_header {
+  display: none; /* Cacher le bouton "Menu" par défaut */
+  position: absolute;
+  top: 10px; /* Ajout de padding en haut */
+  right: 10px;
+  z-index: 1001; /* Assurez-vous que le conteneur est au-dessus des autres éléments */
+}
+
+.show-nav-button_header {
+  background-color: transparent;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.show-nav-button_header .line_header {
+  width: 25px;
+  height: 3px;
+  background-color: #22493A; /* Couleur verte */
+  margin: 4px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.show-nav-button_header:hover .line_header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Animation d'ombre */
+}
+
+.show-nav-button_header.active .line_header:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.show-nav-button_header.active .line_header:nth-child(2) {
+  opacity: 0;
+}
+
+.show-nav-button_header.active .line_header:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-modal_header {
+  position: absolute;
+  top: 50px; /* Ajustez cette valeur pour l'alignement vertical */
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  z-index: 1000; /* Assurez-vous que la fenêtre modale est au-dessus des autres éléments */
+  animation: slide-down 0.3s ease-out;
+  width: 250px; /* Augmenter la largeur de la fenêtre modale */
+}
+
+.nav-item_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alignement des flèches */
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.arrow_header {
+  font-size: 1.5em;
+  color: #22493A; /* Couleur verte */
+  margin-left: auto; /* Pousser la flèche à droite */
+}
+
+@media (max-width: 768px) {
+  .header_header {
+    flex-direction: column;
+  }
+
+  .partner-logos_header {
+    display: none; /* Cacher les liens de navigation par défaut sur les petits écrans */
+    flex-direction: column;
+    align-items: center;
+    gap: 1em; /* Réduire l'espace entre les liens sur les petits écrans */
+  }
+
+  .partner-logos_header.show {
+    display: flex; /* Afficher les liens de navigation lorsque showNav est true */
+  }
+
+  .header-link_header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .show-nav-button-container_header {
+    display: block; /* Afficher le bouton "Menu" sur les petits écrans */
+  }
+
+  .logo-image_header {
+    width: 5em; /* Taille du logo pour les petits écrans */
+  }
+}
+
+@media (min-width: 769px) {
+  .partner-logos_header {
+    display: flex; /* Afficher les boutons de navigation sur les ordinateurs */
+    align-items: center; /* Assurez l'alignement vertical */
+    margin-left: auto; /* Pousser les liens à droite */
+  }
+
+  .show-nav-button-container_header {
+    display: none; /* Cacher le bouton "Menu" sur les grands écrans */
+  }
+
+  .logo-image_header {
+    width: 8em; /* Taille du logo pour les grands écrans */
+  }
+}
+
+@media (max-width: 768px) {
+  .header_header {
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu */
+  }
+
+  .header-content_header {
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu */
+  }
+
+  .logo-container_header {
+    order: 1; /* Placer le logo en premier */
+    margin-bottom: 1em; /* Ajouter un espace en bas du logo */
+  }
+
+.header-link_header {
+  color: black;
+
+}
+
+}

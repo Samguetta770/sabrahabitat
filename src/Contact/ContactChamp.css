@@ -1,0 +1,90 @@
+/* ContactChamp.css */
+
+.contact-champ {
+  padding: 2em;
+
+  background-color: #f9f9f9; /* Couleur de fond claire */
+  border-radius: 8px;
+  margin: 1em auto;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour l'effet esthétique */
+}
+
+.contact-title {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #22493A; /* Couleur marron */
+  text-align: left; /* Aligner le titre à gauche */
+}
+
+.contact-details {
+  font-size: 1em; /* Taille de la police réduite */
+  line-height: 1.5;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.contact-icon {
+  width: 4em; /* Taille ajustée de l'icône */
+  height: auto;
+  margin-right: 0.3em; /* Réduction du padding */
+}
+
+.flag-icon {
+  width: 2.5em; /* Taille ajustée du drapeau */
+  height: auto;
+  margin-right: 0.3em; /* Réduction du padding */
+  vertical-align: middle;
+}
+
+.contact-label {
+  color: #22493A; /* Couleur marron */
+  font-weight: bold;
+  margin: 0;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #2D6E56; /* Couleur marron foncé au survol */
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-champ {
+    ; /* Éliminer les marges latérales */
+    padding: 1em;
+    padding-top: 0em/* Réduire le padding pour les petits écrans */
+  }
+
+  .contact-icon {
+    width: 3.5em; /* Taille ajustée de l'icône pour les petits écrans */
+    margin-right: 0.2em; /* Réduction du padding */
+  }
+
+  .flag-icon {
+    width: 2em; /* Taille ajustée du drapeau pour les petits écrans */
+    margin-right: 0.2em; /* Réduction du padding */
+  }
+
+  .contact-details {
+    font-size: 0.9em; /* Taille de la police réduite pour les petits écrans */
+  }
+
+  .contact-title {
+    padding-top: 1em;
+    font-size: 1.5em; /* Réduire la taille de la police pour le titre sur les petits écrans */
+  }
+}

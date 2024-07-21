@@ -1,0 +1,137 @@
+/* Animation CSS */
+.image-container {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 50%; /* Décalé vers le haut */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Ajustez la largeur selon vos besoins */
+  height: 60%;
+  background-color: #22493A; /* Même couleur que le titre */
+  z-index: -1; /* Derrière l'image */
+}
+
+.image-container img {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-5em);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(5em);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in-top {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in-left.show, .fade-in-right.show, .fade-in-top.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-top.show {
+  transform: translateY(0);
+}
+
+.new-section {
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: white;
+  margin-right: 6em;
+  margin-left: 6em;
+  margin-bottom: 2em;
+}
+
+.new-section .image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.new-section .image-container img {
+  max-width: 80%;
+  height: auto;
+}
+
+.new-section .text-container {
+  flex: 1;
+  padding-left: 2em;
+}
+
+.new-section .text-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  font-style: oblique;
+  color: #22493A;
+}
+
+.new-section .text-container p {
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+.buttons {
+  margin-top: 1em;
+}
+
+.button {
+  background-color: #22493A;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 1s;
+}
+
+.button:hover {
+  background-color: #1C382D;
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .new-section {
+    flex-direction: column;
+    margin: 0.5em;
+    padding: 1em;
+  }
+
+  .new-section .text-container {
+    padding-left: 0;
+    padding-top: 1em;
+  }
+
+  .new-section .text-container h2 {
+    font-size: 2em;
+  }
+
+  .new-section .text-container p {
+    font-size: 0.8em;
+  }
+
+  .new-section .image-container img {
+    width: 80%;
+  }
+}

@@ -1,0 +1,45 @@
+/* ContactPage.css */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0em;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  padding-right: 6em;
+  padding-left: 6em;
+}
+
+.contact-left {
+  flex: 1;
+  padding: 0em;
+  border-radius: 8px;
+  margin: 0.5em; /* Réduction de la marge */
+}
+
+.contact-right {
+  flex: 1;
+  padding: 1.5em; /* Réduction du padding */
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin: 0.5em; /* Réduction de la marge */
+}
+
+.contact-right {
+  flex: 0.8; /* Pour rendre le formulaire un peu plus petit */
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    margin: 0 0.5em; /* Réduire les marges latérales sur les petits écrans */
+    padding: 0 1em; /* Ajouter du padding à l'intérieur pour les petits écrans */
+  }
+
+  .contact-left,
+  .contact-right {
+    margin: 0.5em 0;
+    padding: 1em; /* Ajouter du padding pour les petits écrans */
+  }
+}
+

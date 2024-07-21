@@ -1,0 +1,135 @@
+/* Animation CSS */
+.fade-in_2 {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in_2.show_2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-text_2 {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.fade-in_2.show_2 .fade-in-text_2 {
+  opacity: 1;
+}
+
+.presentation-container_2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.background_2 {
+  background-image: url('../Ressources/Photo_1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 38em; /* Réduire la taille de l'image en arrière-plan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  filter: brightness(85%);
+  position: relative;
+  transition: transform 1s ease-out;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0.8em;
+}
+
+.background_2.show_2 {
+  transform: translateY(-20px); /* Glisse vers le haut */
+}
+
+.background_2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Ressources/BenifPhotoPresentation.jpg');
+  background-size: 80%;
+  background-position: center 30%;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.background_2::after {
+  content: "";
+  position: absolute;
+  bottom: -2cm; /* Positionnez le pseudo-élément en dessous de l'arrière-plan */
+  left: 0;
+  width: 100%;
+  height: 6em; /* Hauteur de la barre verte */
+  background-color: #22493A; /* Utilisation de la couleur verte */
+  z-index: -1; /* Placez la barre verte derrière l'arrière-plan */
+}
+
+.content_2 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.content_2 h1 {
+  font-size: 3em; /* Taille du titre réduite */
+  margin-bottom: 0.5em;
+}
+
+.content_2 p {
+  font-size: 1.5em; /* Taille du texte réduite */
+}
+
+.buttons_2 {
+  margin-top: 1em;
+}
+
+.button_2 {
+  background-color: #22493A;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 1s;
+}
+
+.button_2:hover {
+  background-color: #1C382D;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .background_2 {
+    height: 20em; /* Ajuster la taille de l'image en arrière-plan */
+    margin-top: 0;
+
+  }
+
+  .content_2 h1 {
+    font-size: 2em; /* Taille du titre réduite */
+  }
+
+  .content_2 p {
+    font-size: 1em; /* Taille du texte réduite */
+  }
+
+  .button_2 {
+    font-size: 0.9em; /* Taille du bouton réduite */
+    padding: 0.4em 0.8em; /* Ajuster le padding du bouton */
+  }
+
+  .background_2::after {
+    bottom: -1cm; /* Ajuster la position du pseudo-élément */
+    height: 3em; /* Hauteur de la barre verte ajustée */
+  }
+}

@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  padding: 1em;
+  background-color: #f4f4f9; /* Fond léger pour un look moderne */
+}
+
+.team-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #1C382D;
+  margin-bottom: 1em;
+  position: center;
+  display: inline-block;
+  padding-bottom: 0.5em;
+  align-items: center;
+
+}
+
+.team-title::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: #22493A; /* Ligne de séparation colorée pour un effet moderne */
+  margin: 0.5em auto 0;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 600px) {
+  .team-title {
+    font-size: 2em;
+  }
+
+  main {
+    flex-direction: column;
+  }
+}

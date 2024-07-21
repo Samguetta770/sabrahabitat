@@ -1,0 +1,24 @@
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000; /* S'assurer que le bouton est au-dessus des autres éléments */
+  transition: transform 0.3s, box-shadow 0.3s; /* Ajoute une transition pour l'effet de grossissement et l'ombre */
+}
+
+.whatsapp-button:hover .whatsapp-logo {
+  transform: scale(1.1); /* Grossissement */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Effet d'ombre */
+}
+
+.whatsapp-logo {
+  width: 60px; /* Ajustez la taille du logo selon vos besoins */
+  height: auto;
+  transition: transform 0.3s, box-shadow 0.3s; /* Ajoute une transition pour l'effet de grossissement et l'ombre */
+}
