@@ -83,7 +83,7 @@ background-position: center 45%;
 /* Media queries pour les petits écrans */
 @media (max-width: 768px) {
   .background {
-    height: 20em;
+    height: auto;
     padding-right: 2em;/* Réduire la hauteur pour les petits écrans */
   }
 
@@ -104,8 +104,8 @@ background-position: center 45%;
   }
 
   .button_p {
-    padding: 0.8em 1.3em; /* Réduire le padding pour les boutons */
-    font-size: 0.95em; /* Réduire la taille de la police pour les boutons */
+    padding: 0.5em 1.3em; /* Réduire le padding pour les boutons */
+    font-size: 0.6em; /* Réduire la taille de la police pour les boutons */
     margin-right: 0.4em; /* Réduire l'espacement entre les boutons */
   }
 }
