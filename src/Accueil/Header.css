@@ -44,7 +44,7 @@
 .header-link_header {
   text-decoration: none;
   color: white;
-  font-size: 1em;
+  font-size: 2vw;
   transition: color 0.3s;
   letter-spacing: 0.1em; /* Ajouter de l'espace entre les lettres */
   word-spacing: 0.2em; /* Ajouter de l'espace entre les mots */

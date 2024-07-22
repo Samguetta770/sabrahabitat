@@ -75,9 +75,9 @@ const TextPhoto = () => {
           </div>
         </div>
         <div className="image-container-TP fade-in-right" ref={imageRef}>
-          <img src={img1} style={{ height: '40%', width: '110%',paddingTop:'2em',paddingLeft:'3em' }} alt="Travailleurs installant des travaux énergie économie" />
+          <img src={img1} className="hidden-mobile" style={{ height: '40%', width: '110%', paddingTop: '2em', paddingLeft: '3em' }} alt="Travailleurs installant des travaux énergie économie" />
           <div className="bottom-images">
-            <img src={img4} className="image-4" alt="Image 4" />
+            <img src={img4} className="image-4 hidden-mobile" alt="Image 4" />
             <img src={img5} className="image-5" alt="Image 5" />
           </div>
         </div>

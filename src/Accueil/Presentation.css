@@ -17,7 +17,7 @@
 
   background-size: cover;
   background-position: center;
-  height: 40em;
+  height: 60vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,16 +46,16 @@ background-position: center 45%;
 }
 
 .content h1 {
-  font-size: 6em;
+  font-size: 8vw;
   margin-bottom: 0.5em;
 }
 
 .content p {
-  font-size: 2.8em;
+  font-size: 2.8vw;
 }
 
 .content .quote {
-  font-size: 1em; /* Taille réduite du verset */
+  font-size: 1.3vw; /* Taille réduite du verset */
   font-style: italic;
   margin-top: 1em;
 }
@@ -70,7 +70,7 @@ background-position: center 45%;
   border: none;
   padding: 0.5em 1em;
   margin-right: 1em;
-  font-size: 1.2em;
+  font-size: 1.6vw;
   cursor: pointer;
   transition: background-color 0.3s, transform 1s;
 }
@@ -83,7 +83,7 @@ background-position: center 45%;
 /* Media queries pour les petits écrans */
 @media (max-width: 768px) {
   .background {
-    height: auto;
+    height: 23vw;
     padding-right: 2em;/* Réduire la hauteur pour les petits écrans */
   }
 

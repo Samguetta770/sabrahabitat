@@ -10,6 +10,7 @@
 .footer-info, .footer-links, .footer-logos {
   flex: 1; /* Chaque section prend 1/3 de l'espace */
   min-width: 200px; /* Largeur minimale pour les petites résolutions */
+  margin: 1em 0; /* Ajoute de l'espace vertical entre les sections */
 }
 
 .footer-info {
@@ -46,7 +47,7 @@
   display: flex;
   justify-content: center; /* Centrer les liens */
   align-items: center;
-  gap: 2em; /* Espace entre les liens */
+  gap: 1em; /* Espace entre les liens */
   color: white;
 }
 
@@ -71,10 +72,19 @@
   margin-left: 1em;
   width: 12em;
 }
+
 @media (max-width: 768px) {
-.footer-links {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start; /* Aligner les éléments à gauche sur les petits écrans */
+  }
 
-  gap: 1.5em;
-  margin-bottom: 1em/* Espace entre les liens */
+  .footer-links {
+    gap: 1.5em;
+    margin-bottom: 1em; /* Espace entre les liens */
+  }
 
-}}
+  .footer-info, .footer-links, .footer-logos {
+    margin: 1em 0; /* Ajoute de l'espace vertical entre les sections sur les petits écrans */
+  }
+}

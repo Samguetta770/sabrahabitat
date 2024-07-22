@@ -1,8 +1,8 @@
 import React from 'react';
 import './TeamMembers.css';
-import member1 from "./../Ressources/tito.jpeg";
-import member2 from "./../Ressources/tito.jpeg"; // remplacez par le chemin réel des images
-import member3 from "./../Ressources/tito.jpeg"; // remplacez par le chemin réel des images
+import member1 from "./../Ressources/photo_dattente.jpg";
+import member2 from "./../Ressources/photo_dattente.jpg"; // remplacez par le chemin réel des images
+import member3 from "./../Ressources/photo_dattente.jpg"; // remplacez par le chemin réel des images
 
 const TeamMembers = () => {
   const members = [
@@ -26,9 +26,10 @@ const TeamMembers = () => {
       id: 3,
       name: 'Lena',
       surname: 'Hattab',
-      description: 'Ex de Elie Elkrief',
+      description: 'Fondatrice de l’agence LMH Interior.\n\nPassionnée d’architecture depuis toujours, elle ouvre son agence à Paris avec plus de 30 Projets à son actif.Architecte d’intérieur et désigner elle pourra vous accompagner tout au long de votre projet.'
+,
       image: member3,
-      website: 'https://www.emilyjohnson.com',
+      website: 'https://www.instagram.com/lmh.interior?igsh=MWQ5M3llZDcxeGRiNA%3D%3D&utm_source=qr',
     },
   ];
 
