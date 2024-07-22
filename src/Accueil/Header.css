@@ -198,7 +198,7 @@
 
   .logo-container_header {
     order: 1; /* Placer le logo en premier */
-    margin-bottom: 1em; /* Ajouter un espace en bas du logo */
+    margin-bottom: 0em; /* Ajouter un espace en bas du logo */
   }
 
 .header-link_header {
