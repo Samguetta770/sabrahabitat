@@ -83,12 +83,12 @@ background-position: center 45%;
 /* Media queries pour les petits écrans */
 @media (max-width: 768px) {
   .background {
-    height: 23vw;
+    background-size:cover;
     padding-right: 2em;/* Réduire la hauteur pour les petits écrans */
   }
 
   .content h1 {
-    font-size: 2em; /* Réduire la taille de la police pour les titres */
+    font-size: 2.2em; /* Réduire la taille de la police pour les titres */
   }
 
   .content p {
@@ -100,7 +100,8 @@ background-position: center 45%;
   }
 
   .buttons {
-    margin-top: 0.5em; /* Réduire la marge supérieure des boutons */
+    margin-top: 0.5em;
+    padding: 0.2em/* Réduire la marge supérieure des boutons */
   }
 
   .button_p {

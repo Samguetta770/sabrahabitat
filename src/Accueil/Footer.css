@@ -49,6 +49,7 @@
   align-items: center;
   gap: 1em; /* Espace entre les liens */
   color: white;
+
 }
 
 .footer-links a {
@@ -80,8 +81,12 @@
   }
 
   .footer-links {
-    gap: 1.5em;
+    gap: 1em;
     margin-bottom: 1em; /* Espace entre les liens */
+  }
+  .footer-links a {
+    font-size: 0.9em; /* Réduire la taille de la police des liens */
+    padding: 0.5em 0; /* Ajuster le padding pour les petits écrans */
   }
 
   .footer-info, .footer-links, .footer-logos {

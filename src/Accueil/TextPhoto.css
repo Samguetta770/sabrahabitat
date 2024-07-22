@@ -130,13 +130,19 @@
   display: none;
 }
 
+@media (min-width: 769px) {
+  .hidden-mobile {
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   .new-section-TP {
     flex-direction: column;
     padding: 1em;
   }
 
-  .new-section-TP .content {
+    .new-section-TP .content {
     margin: 0;
     padding: 0;
     flex-direction: column;

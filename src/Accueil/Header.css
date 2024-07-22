@@ -4,16 +4,16 @@
 
 .header_header {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
   background-color: #1C382D;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5em 2em; /* Réduction du padding en haut et en bas */
+   padding: 0em 0.8em;  /* Réduction du padding en haut et en bas */
   position: relative; /* Ajouté pour positionner le bouton Menu */
 }
 
@@ -30,21 +30,22 @@
 }
 
 .logo-image_header {
-  width: 6em; /* Taille du logo par défaut pour les petits écrans */
+  width: 5em; /* Taille du logo par défaut pour les petits écrans */
   height: auto;
 }
 
 .partner-logos_header {
   display: flex;
-  gap: 2em; /* Augmenter l'espace entre les liens */
+  gap: 1em; /* Augmenter l'espace entre les liens */
   align-items: center; /* Aligner verticalement les liens avec le logo */
   margin-left: auto; /* Pousser les liens à droite */
+  font-size: 2em;
 }
 
 .header-link_header {
   text-decoration: none;
   color: white;
-  font-size: 2vw;
+  font-size: 1.5vw;
   transition: color 0.3s;
   letter-spacing: 0.1em; /* Ajouter de l'espace entre les lettres */
   word-spacing: 0.2em; /* Ajouter de l'espace entre les mots */
@@ -140,6 +141,7 @@
 @media (max-width: 768px) {
   .header_header {
     flex-direction: column;
+    height: auto;
   }
 
   .partner-logos_header {
