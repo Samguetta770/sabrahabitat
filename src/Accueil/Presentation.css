@@ -83,7 +83,7 @@ background-position: center 45%;
 /* Media queries pour les petits écrans */
 @media (max-width: 768px) {
   .background {
-    background-size:cover;
+    background-size:auto;
     padding-right: 2em;/* Réduire la hauteur pour les petits écrans */
   }
 
