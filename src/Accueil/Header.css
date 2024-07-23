@@ -30,7 +30,7 @@
 }
 
 .logo-image_header {
-  width: 5em; /* Taille du logo par défaut pour les petits écrans */
+  width: 3em; /* Taille du logo par défaut pour les petits écrans */
   height: auto;
 }
 
@@ -39,13 +39,14 @@
   gap: 1em; /* Augmenter l'espace entre les liens */
   align-items: center; /* Aligner verticalement les liens avec le logo */
   margin-left: auto; /* Pousser les liens à droite */
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .header-link_header {
   text-decoration: none;
   color: white;
   font-size: 1.5vw;
+
   transition: color 0.3s;
   letter-spacing: 0.1em; /* Ajouter de l'espace entre les lettres */
   word-spacing: 0.2em; /* Ajouter de l'espace entre les mots */
@@ -77,7 +78,7 @@
 .show-nav-button_header .line_header {
   width: 25px;
   height: 3px;
-  background-color: #22493A; /* Couleur verte */
+  background-color: white; /* Couleur verte */
   margin: 4px 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -158,14 +159,16 @@
   .header-link_header {
     width: 100%;
     text-align: center;
+    font-size: 4vw;
   }
+
 
   .show-nav-button-container_header {
     display: block; /* Afficher le bouton "Menu" sur les petits écrans */
   }
 
   .logo-image_header {
-    width: 5em; /* Taille du logo pour les petits écrans */
+    width: 4em; /* Taille du logo pour les petits écrans */
   }
 }
 
@@ -181,7 +184,7 @@
   }
 
   .logo-image_header {
-    width: 8em; /* Taille du logo pour les grands écrans */
+    width: 5em; /* Taille du logo pour les grands écrans */
   }
 }
 

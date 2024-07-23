@@ -8,7 +8,7 @@ const TeamMembers = () => {
   const members = [
     {
       id: 1,
-      name: 'Aviram',
+      name: 'Amiram',
       surname: 'Amsellem',
       description: "Ingénieur civil, PDG de la société de construction \"Amiram Andassa\".\nAvec plus de 20 ans d'expérience dans la gestion de projets de construction.\nTravail en partenariat avec les maires de Jérusalem, Ashkelon et Herzliya.",
       image: member1,

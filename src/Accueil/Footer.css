@@ -1,10 +1,11 @@
 .footer {
   background-color: #22493A;
-  padding: 2em;
+  padding: 2em 1em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center; /* Centrer les éléments horizontalement */
   flex-wrap: wrap; /* Pour s'adapter sur les petits écrans */
+  text-align: center; /* Centrer le texte */
 }
 
 .footer-info, .footer-links, .footer-logos {
@@ -22,6 +23,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  justify-content: center; /* Centrer les éléments */
 }
 
 .contact-link:hover {
@@ -29,18 +31,15 @@
 }
 
 .phone-icon {
-  margin-left: 1em;
-  margin-right: 1em;
-  width: 3em; /* Ajustez la taille selon vos besoins */
+  margin-right: 0.5em;
+  width: 3.5em; /* Ajustez la taille selon vos besoins */
   height: auto;
-  vertical-align: middle;
 }
 
 .mail-icon {
-  width: 5em; /* Ajustez la taille selon vos besoins */
+  margin-right: 0.5em;
+  width: 3.5em; /* Ajustez la taille selon vos besoins */
   height: auto;
-  margin-right: 0em; /* Espace entre l'icône et le texte */
-  vertical-align: middle;
 }
 
 .footer-links {
@@ -49,7 +48,6 @@
   align-items: center;
   gap: 1em; /* Espace entre les liens */
   color: white;
-
 }
 
 .footer-links a {
@@ -70,26 +68,35 @@
 }
 
 .footer-logos img {
-  margin-left: 1em;
-  width: 12em;
+  width: 10em; /* Ajustez la taille selon vos besoins */
+  height: auto;
+  margin: 0 1em;
 }
 
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
-    align-items: flex-start; /* Aligner les éléments à gauche sur les petits écrans */
-  }
-
-  .footer-links {
-    gap: 1em;
-    margin-bottom: 1em; /* Espace entre les liens */
-  }
-  .footer-links a {
-    font-size: 0.9em; /* Réduire la taille de la police des liens */
-    padding: 0.5em 0; /* Ajuster le padding pour les petits écrans */
+    align-items: center; /* Centrer les éléments sur les petits écrans */
+    text-align: center; /* Centrer le texte */
   }
 
   .footer-info, .footer-links, .footer-logos {
     margin: 1em 0; /* Ajoute de l'espace vertical entre les sections sur les petits écrans */
+  }
+
+  .footer-links {
+    gap: 0.5em; /* Réduire l'espace entre les liens pour les petits écrans */
+  }
+
+  .footer-links a {
+    font-size: 1em; /* Taille de police ajustée pour les liens */
+  }
+
+  .phone-icon, .mail-icon {
+    width: 3.2em; /* Ajuster la taille des icônes pour les petits écrans */
+  }
+
+  .footer-logos img {
+    width: 8em; /* Ajustez la taille selon vos besoins */
   }
 }

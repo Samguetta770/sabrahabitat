@@ -47,7 +47,7 @@ const Presentation = () => {
     <div className="background fade-in" ref={backgroundRef}>
       <div className="content">
         <h1>Sabra Habitat</h1>
-        <p>La première société de construction française en Israël</p>
+        <p>La première société française de construction de maison individuelles en Israël </p>
         <p className="quote">"Le pays que j’ai accordé à Avraham et Issac je te le donne, et je le donnerais ce pays à ta descendance après toi"  (Berechit 32 ;12)</p>
         <div className="buttons">
           <button className="button_p" onClick={handleMoreInfoClick}>En savoir plus</button>

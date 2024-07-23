@@ -7,7 +7,6 @@
   color: black;
   overflow: hidden;
   margin-bottom: 5em;
-
 }
 
 .image-container {
@@ -28,8 +27,8 @@
 
 .image-border {
   position: relative;
-  padding: 1em;
-  background: linear-gradient(to bottom, #A3D9B1, white); /* Vert clair */
+  padding: 0em;
+  background: #22493A; /* Vert foncé */
 }
 
 .img {
@@ -55,7 +54,6 @@
   color: #22493A;
   font-size: 2em;
   margin-bottom: 0.5em;
-  padding-bottom: 3em;
 }
 
 .text-container p {
@@ -85,7 +83,8 @@
 @media (max-width: 768px) {
   .projet-container {
     flex-direction: column;
-    padding: 1em;
+    padding: 1em 1em 0; /* Réduire le padding en haut */
+    text-align: center; /* Centrer tous les textes */
   }
 
   .image-container {
@@ -94,6 +93,7 @@
 
   .text-container {
     padding-left: 0;
+    text-align: center; /* Centrer le texte */
   }
 
   .text-container h2 {

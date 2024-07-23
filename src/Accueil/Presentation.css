@@ -1,4 +1,4 @@
-/* Presentation.css */
+@import url('https://fonts.googleapis.com/css2?family=Allegreya+SC:wght@400;700&display=swap');
 
 /* Animation CSS */
 .fade-in {
@@ -14,10 +14,9 @@
 
 .background {
   padding-left: 3em;
-
   background-size: cover;
   background-position: center;
-  height: 60vw;
+  height: 100vh; /* Ajuster la hauteur pour prendre toute la hauteur de la fenêtre */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +34,7 @@
   height: 100%;
   background-image: url('../Ressources/Photo_1.jpg');
   background-size: 90%;
-background-position: center 45%;
+  background-position: center 45%;
   filter: brightness(30%);
   z-index: -1;
 }
@@ -48,6 +47,7 @@ background-position: center 45%;
 .content h1 {
   font-size: 8vw;
   margin-bottom: 0.5em;
+  font-family: 'Allegreya SC', serif;
 }
 
 .content p {
@@ -75,7 +75,7 @@ background-position: center 45%;
   transition: background-color 0.3s, transform 1s;
 }
 
-.button:hover {
+.button_p:hover {
   background-color: #1C382D;
   transform: scale(1.1);
 }
@@ -83,12 +83,14 @@ background-position: center 45%;
 /* Media queries pour les petits écrans */
 @media (max-width: 768px) {
   .background {
-    background-size:auto;
-    padding-right: 2em;/* Réduire la hauteur pour les petits écrans */
+    padding-right: 2em;
+    /* Réduire la hauteur pour les petits écrans */
   }
 
   .content h1 {
-    font-size: 2.2em; /* Réduire la taille de la police pour les titres */
+    font-size: 2.2em;
+    padding-top: 1em;
+    /* Réduire la taille de la police pour les titres */
   }
 
   .content p {
@@ -101,7 +103,6 @@ background-position: center 45%;
 
   .buttons {
     margin-top: 0.5em;
-    padding: 0.2em/* Réduire la marge supérieure des boutons */
   }
 
   .button_p {

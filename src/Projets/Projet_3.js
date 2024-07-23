@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
-import './Projet_1.css';
+import './Projet_3.css';
 import projectImage1 from "./../Ressources/Photo_6.avif";
 import projectImage2 from "./../Ressources/Photo_7.avif";
 import projectImage3 from "./../Ressources/Photo_8.avif";
 import { useNavigate } from 'react-router-dom';
-const Projet_1 = () => {
+const Projet_3 = () => {
   const imageRef = useRef(null);
   const textRef = useRef(null);
   const navigate = useNavigate();
@@ -50,4 +50,4 @@ const handleContactClick = () => {
   );
 };
 
-export default Projet_1;
+export default Projet_3;

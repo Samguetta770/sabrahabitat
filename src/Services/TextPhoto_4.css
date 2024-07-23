@@ -1,4 +1,5 @@
 .new-section_4 {
+
   display: flex;
   align-items: flex-start;
   padding-top: 1.5em;
@@ -132,6 +133,7 @@
 
 @media (max-width: 768px) {
   .new-section_4 {
+    text-align: center;
     flex-direction: column;
     margin-left: 1em;
     margin-right: 1em;
@@ -166,6 +168,7 @@
 
   .new-section_4 .column_4 p {
     font-size: 0.8em;
+    text-align: center;
   }
 
   .icon-item_4 img {

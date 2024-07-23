@@ -80,19 +80,19 @@ const TextPhoto_4 = () => {
           <div className="icon-section_4">
             <div className="icon-item_4" ref={el => iconRefs.current[0] = el}>
               <img src={icon1} alt="Équipe professionnelle et expérimentée" />
-              <p>Une équipe professionnelle et expérimentée</p>
+              <p style={{ textAlign: 'center',justifyContent: 'center' }}>Une équipe professionnelle et expérimentée</p>
             </div>
             <div className="icon-item_4" ref={el => iconRefs.current[1] = el}>
               <img src={icon2} alt="Nous travaillons dans tout le Devon occidental" />
-              <p>Nous travaillons dans tout Israël</p>
+              <p style={{ textAlign: 'center',justifyContent: 'center' }}>Nous travaillons dans tout Israël</p>
             </div>
             <div className="icon-item_4" ref={el => iconRefs.current[2] = el}>
               <img src={icon3} alt="Services spécialisés haut de gamme" style={{ paddingLeft: '0.3em' }}/>
-              <p>Services spécialisés haut de gamme</p>
+              <p style={{ textAlign: 'center',justifyContent: 'center' }}>Services spécialisés haut de gamme</p>
             </div>
             <div className="icon-item_4" ref={el => iconRefs.current[3] = el}>
               <img src={icon4} alt="Collaboration avec des architectes et designers" />
-              <p>Services juridique spécialisé</p>
+              <p style={{ textAlign: 'center' ,justifyContent: 'center'}}>Services juridique personnalisé</p>
             </div>
           </div>
           <div className="buttons">

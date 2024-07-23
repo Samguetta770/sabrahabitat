@@ -1,14 +1,17 @@
-.projet-container {
+.projet-container_projet2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2em;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
   background-color: white;
   color: black;
   overflow: hidden;
 }
 
-.image-container {
+.image-container_projet2 {
   position: relative;
   flex: 1;
   display: flex;
@@ -19,34 +22,37 @@
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.image-container.show {
+.image-container_projet2.show_projet2 {
   opacity: 1;
   transform: translateX(0);
 }
 
-.image-border {
+.image-border_projet2 {
   position: relative;
   padding: 1em;
 }
 
-.image-border::before {
+.image-border_projet2::before {
   content: "";
   position: absolute;
-  top: 0; /* Placer le rectangle en haut */
+  bottom: 0; /* Placer le rectangle en bas */
   left: 0;
   width: 100%;
   height: 50%; /* Ajuster la hauteur selon vos besoins */
-  background: #A3D9B1; /* Vert clair */
+  background: #22493A; /* Vert foncé */
   z-index: -1;
 }
 
-.img {
+
+
+
+.img_projet2 {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.text-container {
+.text-container_projet2 {
   flex: 1;
   padding-right: 2em;
   opacity: 0;
@@ -54,26 +60,28 @@
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.text-container.show {
+.text-container_projet2.show_projet2 {
   opacity: 1;
   transform: translateX(0);
 }
 
-.text-container h2 {
+.text-container_projet2 h2 {
   color: #22493A;
   font-size: 2em;
   margin-bottom: 0.5em;
 }
 
-.text-container p {
+.text-container_projet2 p {
   font-size: 1em;
 }
 
-.button-container {
+.button-container_projet2 {
   margin-top: 1em;
+  display: flex;
+  justify-content: center; /* Centrer les boutons */
 }
 
-.contact-button {
+.contact-button_projet2 {
   background-color: #22493A;
   color: white;
   border: none;
@@ -83,34 +91,44 @@
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.contact-button:hover {
+.contact-button_projet2:hover {
   background-color: #1C382D;
   transform: scale(1.1);
 }
+
 @media (max-width: 768px) {
-  .projet-container {
-    flex-direction: column;
-    padding: 1em;
+  .projet-container_projet2 {
+    flex-direction: column-reverse; /* Inverser l'ordre des éléments */
+    align-items: center;
+    padding: 0em 1em 0; /* Réduire le padding en haut */
     margin-bottom: 1em;
+    text-align: center; /* Centrer tous les textes */
   }
 
-  .image-container {
+  .image-container_projet2 {
     margin-bottom: 1em;
+    transform: translateX(0); /* Réinitialiser l'animation */
   }
 
-  .text-container {
+  .text-container_projet2 {
     padding-left: 0;
+    transform: translateX(0); /* Réinitialiser l'animation */
+    text-align: center; /* Centrer le texte */
   }
 
-  .text-container h2 {
+  .text-container_projet2 h2 {
     font-size: 1.5em;
   }
 
-  .text-container p {
+  .text-container_projet2 p {
     font-size: 0.9em;
   }
 
-  .contact-button {
+  .button-container_projet2 {
+    justify-content: center; /* Centrer les boutons */
+  }
+
+  .contact-button_projet2 {
     font-size: 0.9em;
     padding: 0.4em 0.8em;
   }

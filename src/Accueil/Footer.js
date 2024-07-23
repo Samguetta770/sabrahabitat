@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css'; // Assurez-vous d'avoir un fichier CSS correspondant
 import { Link } from 'react-router-dom';
-import img1 from "./../Ressources/telephone_bleu.png";
-import img2 from "./../Ressources/Mail_Bleu.png";
+import img1 from "./../Ressources/telephone_blanc.png";
+import img2 from "./../Ressources/mail_blanc.png";
 import logo from "./../Ressources/logo_sabra_habitat_Noir.png";
 
 const Footer = () => {
