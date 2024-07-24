@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
 import img from "./../Ressources/sabrristouche_gold_logo.png";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
   const navRef = useRef(null);
+  const navigate = useNavigate();
 
   const handleClickOutside = (event) => {
     if (navRef.current && !navRef.current.contains(event.target)) {
@@ -20,6 +21,11 @@ const Header = () => {
     };
   }, []);
 
+  const scrollToTop = (path) => {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="header_header">
       <div className="header-content_header">
@@ -27,10 +33,10 @@ const Header = () => {
           <img src={img} alt="Logo" className="logo-image_header" />
         </div>
         <div className="partner-logos_header">
-          <Link to="/" className="header-link_header">Accueil</Link>
-          <Link to="/services" className="header-link_header">Services</Link>
-          <Link to="/projets" className="header-link_header">Projets</Link>
-          <Link to="/contact" className="header-link_header">Contact</Link>
+          <Link to="/" className="header-link_header" onClick={() => scrollToTop('/')}>Accueil</Link>
+          <Link to="/services" className="header-link_header" onClick={() => scrollToTop('/services')}>Services</Link>
+          <Link to="/projets" className="header-link_header" onClick={() => scrollToTop('/projets')}>Projets</Link>
+          <Link to="/contact" className="header-link_header" onClick={() => scrollToTop('/contact')}>Contact</Link>
         </div>
         <div className={`show-nav-button-container_header`} ref={navRef}>
           <button className="show-nav-button_header" onClick={() => setShowNav(!showNav)}>
@@ -42,22 +48,22 @@ const Header = () => {
           {showNav && (
             <div className="nav-modal_header">
               <div className="nav-item_header">
-                <Link to="/" className="header-link_header" onClick={() => setShowNav(false)}>
+                <Link to="/" className="header-link_header" onClick={() => { setShowNav(false); scrollToTop('/'); }}>
                   <span>Accueil</span> <span className="arrow_header">></span>
                 </Link>
               </div>
               <div className="nav-item_header">
-                <Link to="/services" className="header-link_header" onClick={() => setShowNav(false)}>
+                <Link to="/services" className="header-link_header" onClick={() => { setShowNav(false); scrollToTop('/services'); }}>
                   <span>Services</span> <span className="arrow_header">></span>
                 </Link>
               </div>
               <div className="nav-item_header">
-                <Link to="/projets" className="header-link_header" onClick={() => setShowNav(false)}>
+                <Link to="/projets" className="header-link_header" onClick={() => { setShowNav(false); scrollToTop('/projets'); }}>
                   <span>Projets</span> <span className="arrow_header">></span>
                 </Link>
               </div>
               <div className="nav-item_header">
-                <Link to="/contact" className="header-link_header" onClick={() => setShowNav(false)}>
+                <Link to="/contact" className="header-link_header" onClick={() => { setShowNav(false); scrollToTop('/contact'); }}>
                   <span>Contact</span> <span className="arrow_header">></span>
                 </Link>
               </div>
@@ -70,6 +76,4 @@ const Header = () => {
 };
 
 export default Header;
-
-
 
