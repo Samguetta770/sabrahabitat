@@ -12,7 +12,7 @@
 }
 
 .contact-title {
-  font-size: 1.8em;
+  font-size: 1.8vw;
   margin-bottom: 1em;
   color: #22493A; /* Couleur marron */
   text-align: center; /* Aligner le titre à gauche */
@@ -37,8 +37,7 @@
 
 .flag-icon {
   width: 2.5em; /* Taille ajustée du drapeau */
-  height: auto;
-  margin-right: 0.3em; /* Réduction du padding */
+  height: auto;/* Réduction du padding */
 /* Décalage de 3 cm à gauche */
   vertical-align: middle;
 }

@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Allegreya+SC:wght@400;700&display=swap');
 
 .projet-section {
-  padding: 2em 0;
+  padding: 0;
+  margin: 0;
   background-color: white;
   color: black;
   text-align: center;
+  padding-bottom: 0em;
 }
 
 .title {
@@ -41,11 +43,11 @@
 .projet-container {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  padding: 0em;
   background-color: white;
   color: black;
   overflow: hidden;
-  margin-bottom: 2em;
+  margin-bottom: 0em;
 }
 
 .image-container {

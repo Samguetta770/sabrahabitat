@@ -22,7 +22,7 @@
 .presentation-container_2 {
   position: relative;
   margin: 0;
-  padding-top: 1em;
+  padding-top: 0em;
 }
 
 .background_2 {
@@ -110,6 +110,7 @@
 
 @media (max-width: 768px) {
   .background_2 {
+
     height: 20em; /* Ajuster la taille de l'image en arrière-plan */
     margin-top: 0;
 
@@ -132,4 +133,8 @@
     bottom: -1cm; /* Ajuster la position du pseudo-élément */
     height: 3em; /* Hauteur de la barre verte ajustée */
   }
+  .presentation-container_2 {
+
+  padding-top: 1em;
+}
 }

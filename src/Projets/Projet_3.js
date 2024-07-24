@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import './Projet_3.css';
-import projectImage1 from "./../Ressources/Photo_6.avif";
-import projectImage2 from "./../Ressources/Photo_7.avif";
 import projectImage3 from "./../Ressources/Photo_8.avif";
 import { useNavigate } from 'react-router-dom';
+
 const Projet_3 = () => {
   const imageRef = useRef(null);
   const textRef = useRef(null);
@@ -29,9 +28,11 @@ const Projet_3 = () => {
       if (textElement) observer.unobserve(textElement);
     };
   }, []);
-const handleContactClick = () => {
+
+  const handleContactClick = () => {
     navigate('/contact#contact-section');
   };
+
   return (
     <div className="projet-container">
       <div className="image-container" ref={imageRef}>
@@ -39,9 +40,9 @@ const handleContactClick = () => {
           <img src={projectImage3} className="img" alt="Description of the project" />
         </div>
       </div>
-      <div className="text-container" ref={textRef}>
-        <h2>Renovation de propriété</h2>
-        <p>Transformez et agrandissez votre maison nouvellement aquise selon vos gouts et besoin avec nos service de renovation personnaliserù pour créer l’espace de vie parfait </p>
+      <div className="text-container" ref={textRef} style={{ textAlign: 'center' }}>
+        <h2 style={{ textAlign: 'center' }}>Renovation de propriété</h2>
+        <p style={{ textAlign: 'center' }}>Transformez et agrandissez votre maison nouvellement acquise selon vos goûts et besoins avec nos services de rénovation personnalisés pour créer l’espace de vie parfait.</p>
         <div className="button-container">
           <button className="contact-button" onClick={handleContactClick}>Contactez-nous</button>
         </div>
@@ -51,3 +52,4 @@ const handleContactClick = () => {
 };
 
 export default Projet_3;
+

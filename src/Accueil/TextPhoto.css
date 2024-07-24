@@ -95,6 +95,7 @@
 }
 
 .new-section-TP .text-container-TP h2 {
+
   font-size: 1.5em;
   margin-bottom: 1em;
   font-style: italic; /* Style oblique */
@@ -154,7 +155,7 @@
   }
 
   .new-section-TP .text-container-TP h2 {
-    font-size: 1.2em;
+    font-size: 0.83em;
   }
 
   .new-section-TP .text-container-TP p {

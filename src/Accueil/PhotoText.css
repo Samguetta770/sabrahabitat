@@ -83,6 +83,9 @@
   margin-bottom: 1em;
   font-style: oblique;
   color: #22493A;
+  white-space: nowrap; /* Cache le texte qui dépasse */
+  text-overflow: ellipsis; /* Ajoute des points de suspension si le texte dépasse */
+  max-width: 100%;
 }
 
 .new-section .text-container p {
@@ -124,7 +127,7 @@
   }
 
   .new-section .text-container h2 {
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
   }
 

@@ -19,14 +19,14 @@ const Projets = () => {
   }, [location]);
 
   return (
-      <div>
+      <div style={{ display: 'flex', flexDirection: 'column', margin: 0, padding: 0 }}>
           <div id="projets">
 
 
       <Header/>
               </div>
 
-          <div id="Projet_1" className="project-section">
+          <div id="Projet_1" className="project-section" style={{ padding: "0", margin: "0" }}>
           <Projet_1/>
               </div>
               <div id="Projet_2" className="project-section">

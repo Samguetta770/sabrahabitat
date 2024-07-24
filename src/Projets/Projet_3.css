@@ -38,6 +38,7 @@
 }
 
 .text-container {
+  align-items: center;
   flex: 1;
   padding-left: 2em;
   opacity: 0;
@@ -51,6 +52,7 @@
 }
 
 .text-container h2 {
+  align-items: center;
   color: #22493A;
   font-size: 2em;
   margin-bottom: 0.5em;
