@@ -100,10 +100,12 @@ const ExtraitProjets = () => {
 
   const handleProjectClick = (link) => {
     navigate(link);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleViewProjectsClick = () => {
-    navigate('/projets#id-textphoto-2'); // Navigue vers la section id-textphoto-2
+    navigate('/projets');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
