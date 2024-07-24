@@ -75,7 +75,7 @@ const TextPhoto_4 = () => {
         <div className="text-columns_4">
           <div className="column_4">
             <h2>POURQUOI NOUS CHOISIR POUR VOS PROJETS DE RENOVATION ET DE CONSTRUCTION ?</h2>
-            <p>Experimenté et competent, nous travaillons en etroite collaboration avec tout corps de metiers du btp , ce qui nous permet quelle que soit l’ampleur du projet , d’assurer un services au normes les plus elevés. </p>
+            <p>Expérimentés et compétents, nous travaillons en étroite collaboration avec tous les corps de métiers du BTP, ce qui nous permet, quelle que soit l’ampleur du projet, d’assurer un service aux normes les plus élevées. </p>
           </div>
           <div className="icon-section_4">
             <div className="icon-item_4" ref={el => iconRefs.current[0] = el}>

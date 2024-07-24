@@ -39,7 +39,7 @@
   width: 2.5em; /* Taille ajustée du drapeau */
   height: auto;/* Réduction du padding */
 /* Décalage de 3 cm à gauche */
-  vertical-align: middle;
+  vertical-align: center;
 }
 
 .contact-label {
@@ -76,7 +76,7 @@
 
   .flag-icon {
     width: 2em; /* Taille ajustée du drapeau pour les petits écrans */
-    margin-right: 0.2em; /* Réduction du padding */
+    margin-right: 0em; /* Réduction du padding */
   }
 
   .contact-details {

@@ -35,7 +35,7 @@ const ContactChamp = () => {
   src={flagIl}
   alt="Drapeau Israélien"
   className="flag-icon"
-  style={{ paddingLeft: '0.8' }}
+  style={{ marginLeft: '1.8' }}
 />
 +972 53 9 34-3557
 

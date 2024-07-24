@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Projet_3.css';
-import projectImage3 from "./../Ressources/Photo_8.avif";
+import projectImage3 from './../Ressources/Photo_8.avif';
 import { useNavigate } from 'react-router-dom';
 
 const Projet_3 = () => {
@@ -9,23 +9,23 @@ const Projet_3 = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const imageElement = imageRef.current;
-    const textElement = textRef.current;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    if (imageElement) observer.observe(imageElement);
-    if (textElement) observer.observe(textElement);
+    if (imageRef.current) observer.observe(imageRef.current);
+    if (textRef.current) observer.observe(textRef.current);
 
     return () => {
-      if (imageElement) observer.unobserve(imageElement);
-      if (textElement) observer.unobserve(textElement);
+      if (imageRef.current) observer.unobserve(imageRef.current);
+      if (textRef.current) observer.unobserve(textRef.current);
     };
   }, []);
 
@@ -41,8 +41,10 @@ const Projet_3 = () => {
         </div>
       </div>
       <div className="text-container" ref={textRef} style={{ textAlign: 'center' }}>
-        <h2 style={{ textAlign: 'center' }}>Renovation de propriété</h2>
-        <p style={{ textAlign: 'center' }}>Transformez et agrandissez votre maison nouvellement acquise selon vos goûts et besoins avec nos services de rénovation personnalisés pour créer l’espace de vie parfait.</p>
+        <h2 style={{ textAlign: 'center' }}>Rénovation de propriété</h2>
+        <p style={{ textAlign: 'center' }}>
+          Transformez et agrandissez votre maison nouvellement acquise selon vos goûts et besoins avec nos services de rénovation personnalisés pour créer l’espace de vie parfait.
+        </p>
         <div className="button-container">
           <button className="contact-button" onClick={handleContactClick}>Contactez-nous</button>
         </div>
@@ -52,4 +54,3 @@ const Projet_3 = () => {
 };
 
 export default Projet_3;
-

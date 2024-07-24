@@ -71,7 +71,7 @@
  .steps-title {
 
   color: #22493A;
-  font-size: 1.2em;
+  font-size: 1em;
    margin-bottom: 1.5em;
 
 }
@@ -96,6 +96,7 @@
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   height: 10em; /* Fixer une hauteur pour les carrés */
   box-sizing: border-box;
+  padding-top: 2em;
 }
 
 .step.show {
@@ -111,6 +112,9 @@
   font-size: 1.5em; /* Taille de police réduite pour le titre */
   margin-bottom: 0.5em;
   align-self: flex-start;
+}
+.step p{
+  font-size: 0.8em;
 }
   .step {
     flex: 1 1 100%; /* Chaque carré prend 100% de la largeur sur mobile */

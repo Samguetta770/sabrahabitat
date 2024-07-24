@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import img from "./../Ressources/logo_sabra_habitat_Gold.png";
+import img from "./../Ressources/sabrristouche_gold_logo.png";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);

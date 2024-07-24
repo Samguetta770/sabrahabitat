@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Projet_2.css';
-import projectImage1 from "./../Ressources/Photo_6.avif";
+import projectImage1 from "./../Ressources/Photo_7.avif";
 import { useNavigate } from 'react-router-dom';
 
 const Projet_2 = () => {
@@ -43,7 +43,7 @@ const Projet_2 = () => {
       <div className="projet-container_2">
         <div className="text-container_2" ref={textRef}>
           <h2 className="h2">Construction de maison indépendante</h2>
-          <p className="p_2">Profitez de notre expertise pour construire la villa de vos rêves, personnalisée selon vos désirs et besoins. Nos architectes créent des plans sur mesure, intégrant des fondations solides et des systèmes modernes. Les finitions intérieures et extérieures sont sélectionnées pour offrir un cadre de vie luxueux, confortable et durable. Avec nous, votre vision devient réalité, alliant qualité et élégance.</p>
+          <p className="p_2">Réalisez votre rêve en collaboration avec un second propriétaire. Comportant deux unités distinctes au sein d’un même bâtiment et disposant d’entrées privées, la maison bifamiliale permet de partager les coûts et l’investissement nécessaires, rendant votre rêve plus accessible que jamais.</p>
           <div className="button-container_2">
             <button className="contact-button_2" onClick={handleContactClick}>Contactez-nous</button>
           </div>

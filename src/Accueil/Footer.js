@@ -1,11 +1,18 @@
 import React from 'react';
 import './Footer.css'; // Assurez-vous d'avoir un fichier CSS correspondant
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import img1 from "./../Ressources/telephone_blanc.png";
 import img2 from "./../Ressources/mail_blanc.png";
-import logo from "./../Ressources/logo_sabra_habitat_Noir.png";
+import logo from "./../Ressources/sabrristouche_black_logo.png";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const scrollToTop = (path) => {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="footer">
       <div className="footer-info">
@@ -22,11 +29,11 @@ const Footer = () => {
           <a href="mailto:contact@sabrahabitat.com" className="contact-link"><img src={img2} alt="Téléphone Bleu" className="mail-icon" />contact@sabrahabitat.com</a>
         </p>
       </div>
-       <div className="footer-links">
-        <a href="#home">Accueil</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projets</a>
-        <a href="#contact">Contact</a>
+      <div className="footer-links">
+        <a href="/" onClick={() => scrollToTop('/')}>Accueil</a>
+        <a href="/services" onClick={() => scrollToTop('/services')}>Services</a>
+        <a href="/projets" onClick={() => scrollToTop('/projets')}>Projets</a>
+        <a href="/contact" onClick={() => scrollToTop('/contact')}>Contact</a>
       </div>
       <div className="footer-logos">
         <img src={logo} alt="Company Logo" className="footer-logos-benif" />
@@ -36,6 +43,4 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
 

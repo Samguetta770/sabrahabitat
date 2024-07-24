@@ -28,7 +28,7 @@
 }
 
 .logo-image_header {
-  width: 3em; /* Taille du logo par défaut pour les petits écrans */
+  width: 4em; /* Taille du logo par défaut pour les petits écrans */
   height: auto;
 }
 
@@ -37,7 +37,7 @@
   gap: 1em; /* Augmenter l'espace entre les liens */
   align-items: center; /* Aligner verticalement les liens avec le logo */
   margin-left: auto; /* Pousser les liens à droite */
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .header-link_header {
@@ -163,7 +163,7 @@
   }
 
   .logo-image_header {
-    width: 4em; /* Taille du logo pour les petits écrans */
+    width: 4.5em; /* Taille du logo pour les petits écrans */
   }
 }
 
@@ -179,7 +179,7 @@
   }
 
   .logo-image_header {
-    width: 5em; /* Taille du logo pour les grands écrans */
+    width: 6em; /* Taille du logo pour les grands écrans */
   }
 }
 
