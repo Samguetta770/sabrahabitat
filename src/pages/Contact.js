@@ -17,7 +17,6 @@ const Contact = () => {
   return (
     <div>
         <div id="contact">
-      <Header />
       <div id="contact-section">
         <ContactPage />
       </div>

@@ -7,10 +7,13 @@ import Contact from './pages/Contact';
 import Services from './pages/Services';
 import './App.css'
 import WhatsAppButton from "./Accueil/WhatsAppButton";
+import header from "./Accueil/Header";
+import Header from "./Accueil/Header";
 
 const App = () => {
   return (
       <div>
+          <Header/>
     <WhatsAppButton />
     <Routes>
 

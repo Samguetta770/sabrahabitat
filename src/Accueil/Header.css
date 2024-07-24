@@ -1,20 +1,18 @@
-/* Header.css */
-
-/* Appliquer la police Roboto à tout le document */
-
 .header_header {
+  position: -webkit-sticky; /* Support pour Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
   margin: 0;
-
   box-sizing: border-box;
   background-color: #1C382D;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-   padding: 0em 0.8em;  /* Réduction du padding en haut et en bas */
-  position: relative; /* Ajouté pour positionner le bouton Menu */
+  padding: 0em 0.8em;  /* Réduction du padding en haut et en bas */
 }
 
 .header-content_header {
@@ -46,7 +44,6 @@
   text-decoration: none;
   color: white;
   font-size: 1.5vw;
-
   transition: color 0.3s;
   letter-spacing: 0.1em; /* Ajouter de l'espace entre les lettres */
   word-spacing: 0.2em; /* Ajouter de l'espace entre les mots */
@@ -57,7 +54,6 @@
 
 .header-link_header:hover {
   color: #22493A;
-
 }
 
 .show-nav-button-container_header {
@@ -162,7 +158,6 @@
     font-size: 4vw;
   }
 
-
   .show-nav-button-container_header {
     display: block; /* Afficher le bouton "Menu" sur les petits écrans */
   }
@@ -204,9 +199,7 @@
     margin-bottom: 0em; /* Ajouter un espace en bas du logo */
   }
 
-.header-link_header {
-  color: black;
-
-}
-
+  .header-link_header {
+    color: black;
+  }
 }

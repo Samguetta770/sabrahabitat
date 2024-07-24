@@ -25,7 +25,6 @@ const Accueil = () => {
       {showSplash && <SplashScreen onFinish={handleSplashFinish} />}
       <div className={`main-content ${showSplash ? 'hidden' : ''}`}>
         <div id="accueil">
-        <Header />
         <Presentation />
         <div id="services">
           <div id ="photo-text">

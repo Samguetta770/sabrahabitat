@@ -15,7 +15,6 @@ const Services = () =>{
       <div>
           <div id="projets">
 
-      <Header/>
           </div>
       <Presentation_2/>
        <TextPhoto_4/>

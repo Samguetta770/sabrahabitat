@@ -23,7 +23,6 @@ const Projets = () => {
           <div id="projets">
 
 
-      <Header/>
               </div>
 
           <div id="Projet_1" className="project-section" style={{ padding: "0", margin: "0" }}>
