@@ -11,14 +11,14 @@
 }
 
 main {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 10vw;
   padding-top: 10vw;
 }
 
 @media (max-width: 768px) {
   main {
-  margin-top: 90em;
+  margin-top: 92em;
 }
 }
