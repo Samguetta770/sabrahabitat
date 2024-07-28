@@ -32,7 +32,7 @@ const ContactChamp = () => {
                 <img src={flagFr} alt="Drapeau Français" className="flag-icon" /> {t('phone_fr_i1')}
               </a>
             </p>
-            <p>
+            <p style={{paddingLeft:"0.39em"}}>
               <a href="tel:+972539343557" className="contact-link">
                 <img src={flagIl} alt="Drapeau Israélien" className="flag-icon" /> {t('phone_il_i1')}
               </a>

@@ -139,7 +139,9 @@
   color: #22493A; /* Couleur verte */
   margin-left: auto; /* Pousser la flèche à droite */
 }
-
+.language-selector-mobile {
+    display: none;/* Ajuste la position verticale selon vos besoins */
+  }
 @media (max-width: 768px) {
   .header_header {
     flex-direction: column;
@@ -173,6 +175,7 @@
 
   .language-selector-mobile {
     position: absolute;
+    display: block;
     left: 10px; /* Positionne le sélecteur de langue à gauche */
     top: 10px; /* Ajuste la position verticale selon vos besoins */
   }
