@@ -19,6 +19,6 @@ main {
 
 @media (max-width: 768px) {
   main {
-  margin-top: 94em;
+  margin-top: 0em;
 }
 }
