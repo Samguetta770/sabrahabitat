@@ -85,6 +85,8 @@
   .background {
     padding-right: 2em;
     height: auto;
+    background-size: 120%;
+
     /* Réduire la hauteur pour les petits écrans */
   }
 

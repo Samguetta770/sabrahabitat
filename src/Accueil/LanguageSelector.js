@@ -20,6 +20,7 @@ const LanguageSelector = () => {
   const getDisplayFlag = () => {
     switch (selectedLanguage) {
       case 'fr':
+        return flagIl
       case 'en':
         return flagFr; // Affiche le drapeau israélien
       case 'he':
