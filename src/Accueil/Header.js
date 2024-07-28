@@ -1,9 +1,8 @@
-// src/Header/Header.js
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
 import img from "../Ressources/sabrristouche_gold_logo.png";
-import LanguageSelector from "./LanguageSelector";// Assurez-vous que le chemin est correct
+import LanguageSelector from "./LanguageSelector"; // Assurez-vous que le chemin est correct
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
@@ -31,13 +30,17 @@ const Header = () => {
   return (
     <div className="header_header">
       <div className="header-content_header">
+        <div className="language-selector-mobile">
+          <LanguageSelector />
+        </div>
         <div className="logo-container_header">
           <img src={img} alt="Logo" className="logo-image_header" />
+        </div>
+
+        <div className="partner-logos_header">
           <div className="language-selector-desktop">
             <LanguageSelector />
           </div>
-        </div>
-        <div className="partner-logos_header">
           <Link to="/" className="header-link_header" onClick={() => scrollToTop('/')}>Accueil</Link>
           <Link to="/services" className="header-link_header" onClick={() => scrollToTop('/services')}>Services</Link>
           <Link to="/projets" className="header-link_header" onClick={() => scrollToTop('/projets')}>Projets</Link>
@@ -71,9 +74,6 @@ const Header = () => {
                 <Link to="/contact" className="header-link_header" onClick={() => { setShowNav(false); scrollToTop('/contact'); }}>
                   <span>Contact</span> <span className="arrow_header">></span>
                 </Link>
-              </div>
-              <div className="language-selector-mobile">
-                <LanguageSelector />
               </div>
             </div>
           )}

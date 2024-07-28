@@ -1,21 +1,36 @@
-/* src/components/LanguageSelector.css */
-
 .language-selector {
   position: relative;
   display: inline-block;
 }
 
 .language-button {
-  background: none;
-  border: none;
+  background: none; /* Supprime l'arrière-plan par défaut */
+  border: none; /* Supprime la bordure par défaut */
   cursor: pointer;
   padding: 0;
   margin: 0;
+  transition: transform 0.3s, box-shadow 0.3s; /* Ajoute une transition pour l'effet de grossissement et l'ombre */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-button:hover {
+  transform: scale(1.1); /* Grossissement */
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.001); /* Effet d'ombre */
+  color: inherit; /* Assure que la couleur reste la même */
+  background: none; /* Assure que l'arrière-plan reste transparent */
+  outline: none; /* Supprime l'effet de focus par défaut */
 }
 
 .language-button img {
   width: 2em;
   height: auto;
+  transition: transform 0.3s ease; /* Ajoute une transition douce à l'image */
+}
+
+.language-button:hover img {
+  transform: scale(1.1); /* Applique un zoom de 10% à l'image lors du survol */
 }
 
 .language-dropdown {
@@ -40,13 +55,13 @@
 }
 
 .language-option span {
-  color: #22493A ;/* Couleur verte */
+  color: #22493A; /* Couleur verte */
   transition: color 0.3s;
   font-size: 0.6em;
 }
 
 .language-option:hover span {
-  color: #1C382D /* Vert plus clair au survol */
+  color: #1C382D; /* Vert plus clair au survol */
 }
 
 .language-option img {

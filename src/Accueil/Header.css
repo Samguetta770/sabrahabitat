@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0em 0.8em;  /* Réduction du padding en haut et en bas */
+  padding: 0em 0.8em; /* Réduction du padding en haut et en bas */
 }
 
 .header-content_header {
@@ -20,6 +20,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: relative; /* Assure le positionnement relatif des enfants */
 }
 
 .logo-container_header {
@@ -30,6 +31,10 @@
 .logo-image_header {
   width: 4em; /* Taille du logo par défaut pour les petits écrans */
   height: auto;
+}
+
+.language-selector-desktop {
+  padding-top: 0.3em;
 }
 
 .partner-logos_header {
@@ -164,6 +169,12 @@
 
   .logo-image_header {
     width: 4.5em; /* Taille du logo pour les petits écrans */
+  }
+
+  .language-selector-mobile {
+    position: absolute;
+    left: 10px; /* Positionne le sélecteur de langue à gauche */
+    top: 10px; /* Ajuste la position verticale selon vos besoins */
   }
 }
 
