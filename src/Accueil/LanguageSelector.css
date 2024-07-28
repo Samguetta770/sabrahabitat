@@ -1,0 +1,56 @@
+/* src/components/LanguageSelector.css */
+
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.language-button img {
+  width: 2em;
+  height: auto;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.language-option:hover {
+  background-color: #f0f0f0;
+}
+
+.language-option span {
+  color: #22493A ;/* Couleur verte */
+  transition: color 0.3s;
+  font-size: 0.6em;
+}
+
+.language-option:hover span {
+  color: #1C382D /* Vert plus clair au survol */
+}
+
+.language-option img {
+  width: 2em;
+  height: auto;
+  margin-right: 8px;
+}

@@ -14,7 +14,7 @@ main {
   padding-left: 1vw;
   padding-right: 1vw;
   padding-bottom: 10vw;
-  padding-top: 10vw;
+  padding-top: 2vw;
 }
 
 @media (max-width: 768px) {

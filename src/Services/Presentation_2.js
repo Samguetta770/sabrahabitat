@@ -1,7 +1,11 @@
+// src/Accueil/Presentation_2.js
 import React, { useEffect, useRef } from 'react';
 import './Presentation_2.css';
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Assurez-vous que ce chemin est correct
 
 const Presentation_2 = () => {
+  const { t } = useTranslation();
   const backgroundRef = useRef(null);
 
   useEffect(() => {
@@ -36,10 +40,10 @@ const Presentation_2 = () => {
     <div className="presentation-container_2">
       <div className="background_2 fade-in_2" ref={backgroundRef}>
         <div className="content_2">
-          <h1 className="fade-in-text_2">Nos services de gestion et de construction</h1>
-          <p className="fade-in-text_2">Avec ses nombreux services, Sabra Habitat assure une gestion <br/>ainsi qu’une réalisation complète de vos projets !</p>
+          <h1 className="fade-in-text_2">{t('services_management_construction_title_i3')}</h1>
+          <p className="fade-in-text_2" dangerouslySetInnerHTML={{ __html: t('services_management_construction_description_i3') }}></p>
           <div className="buttons_2 fade-in-text_2">
-            <button className="button_2" onClick={handleMoreInfoClick}>En savoir plus</button>
+            <button className="button_2" onClick={handleMoreInfoClick}>{t('learn_more_i3')}</button>
           </div>
         </div>
       </div>

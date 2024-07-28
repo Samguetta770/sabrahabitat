@@ -1,11 +1,15 @@
+// src/Accueil/TextPhoto.js
 import React, { useEffect, useRef } from 'react';
 import './TextPhoto.css';
-import img1 from "./../Ressources/Photo_3.webp";
-import img4 from "./../Ressources/Photo_4.avif";
-import img5 from "./../Ressources/Photo_5.webp";
+import img1 from './../Ressources/Photo_3.webp';
+import img4 from './../Ressources/Photo_4.avif';
+import img5 from './../Ressources/Photo_5.webp';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Assurez-vous que ce chemin est correct
 
 const TextPhoto = () => {
+  const { t } = useTranslation();
   const titleRef = useRef(null);
   const textRef = useRef(null);
   const imageRef = useRef(null);
@@ -57,21 +61,10 @@ const TextPhoto = () => {
     <div className="new-section-TP">
       <div className="content">
         <div className="text-container-TP">
-          <h2 className="fade-in-top" ref={titleRef}>Qu'est-ce qu'un gestionnaire de projet de construction ?</h2>
-          <p className="fade-in-left" ref={textRef}>
-            Un gestionnaire de projet de construction joue un rôle central dans la réussite de votre projet. Il coordonne et supervise toutes les phases de la construction, depuis la planification initiale jusqu'à la réalisation finale..<br/><br/>
-            <strong>• Une coordination complète :</strong><br/>
-            Chez sabra habitat, nous assurons la liaison entre toutes les parties prenantes, y compris les architectes, les ingénieurs, les sous-traitants et les fournisseurs. Cette gestion garantit une communication fluide et une coordination optimale, minimisant ainsi les risques de retard et de malentendus.<br/><br/>
-            <strong>• Un accompagnement administratif:</strong><br/>
-            Nos experts juridiques veillent à la conformité de toutes les réglementations locales et nationales. <br/>
-              Nous prenons en charge toutes les démarches administratives nécessaires, de la recherche du terrain adéquat, à de l'obtention des permis de construire, vous libérant ainsi des complexités administratives et juridiques.
-              <br/><br/>
-            <strong>• Une gestion économique :</strong><br/>
-            Faire appel a un gestionnaire de projet offre des avantages économiques significatifs. Grâce à une planification rigoureuse et une gestion stricte des budgets, nous optimisons les coûts et évitons les dépenses inutiles. Notre réseau de fournisseurs et de sous-traitants fiables nous permet de négocier les meilleurs tarifs, offrant ainsi des économies substantielles.. Le respect des délais évite les frais liés aux prolongations de chantier, tandis que la réalisation de haute qualité valorise votre investissement immobilier à long terme.<br/><br/>
-            En choisissant Sabra Habitat, vous bénéficiez de l'expertise et de l'accompagnement d'un gestionnaire de projet de construction dédié, qui transforme vos idées en réalité tout en vous offrant une expérience sereine et sans stress.
-          </p>
+          <h2 className="fade-in-top" ref={titleRef}>{t('construction_project_manager_title')}</h2>
+          <p className="fade-in-left" ref={textRef} dangerouslySetInnerHTML={{ __html: t('construction_project_manager_description') }}></p>
           <div className="buttons-TP">
-            <button className="button-TP" onClick={handleContactClick}>Contactez nous</button>
+            <button className="button-TP" onClick={handleContactClick}>{t('construction_project_manager_contact_us')}</button>
           </div>
         </div>
         <div className="image-container-TP fade-in-right" ref={imageRef}>
@@ -87,3 +80,4 @@ const TextPhoto = () => {
 };
 
 export default TextPhoto;
+

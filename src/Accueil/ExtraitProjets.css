@@ -139,8 +139,8 @@
 /* Responsive adjustments for small screens */
 @media (max-width: 768px) {
   .ExtraitProjets {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 0em;
+    margin-right: 0em;
   }
 
   .project-item {
@@ -153,7 +153,7 @@
   }
 
   .ExtraitProjets p {
-    font-size: 1em; /* Réduire la taille de la police pour le paragraphe */
+    font-size: 1em;/* Réduire la taille de la police pour le paragraphe */
   }
 
   .overlay-content p {

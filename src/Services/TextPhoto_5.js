@@ -1,9 +1,13 @@
+// src/Accueil/TextPhoto_5.js
 import React, { useEffect, useRef } from 'react';
 import './TextPhoto_5.css';
 import img1 from "./../Ressources/Photo_13.avif";
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Assurez-vous que ce chemin est correct
 
 const TextPhoto_5 = () => {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
   const imageRef = useRef(null);
@@ -52,22 +56,22 @@ const TextPhoto_5 = () => {
         </div>
         <div className="text-columns_5">
           <div className="column_5" ref={titleRef}>
-            <h2>ET APRÈS ?</h2>
+            <h2>{t('whats_next_title_i7')}</h2>
           </div>
           <div className="column_5" ref={el => textRefs.current[0] = el}>
-            <p2>Une fois que vous nous aurez contactés avec votre demande de gestion de projet en construction, nous organiserons une rencontre pour examiner vos besoins. Lors de cette rencontre, nos experts écouteront attentivement vos exigences en matière d'espace et de budget. Nous vous guiderons à travers le labyrinthe des réglementations et des procédures juridiques impliquées dans un projet de construction, que vous sachiez exactement ce que vous voulez ou que vous ayez besoin d'inspiration.</p2>
+            <p>{t('whats_next_text_1_i7')}</p>
           </div>
           <div className="column_5" ref={el => textRefs.current[1] = el}>
-            <p2>Nous analyserons soigneusement les chiffres et vous fournirons un devis honnête et compétitif pour votre projet de rénovation ou de construction. Vous saurez exactement combien de temps les travaux prendront et nous planifierons les travaux en conséquence.</p2>
+            <p>{t('whats_next_text_2_i7')}</p>
           </div>
           <div className="column_5" ref={el => textRefs.current[2] = el}>
-            <p2>Chez Sabra Habitat, nous nous chargeons de la coordination avec les constructeurs, architectes, ingénieurs et autres ouvriers, afin que vous n'ayez affaire qu'à nous. Cela rend l'ensemble du projet beaucoup moins stressant pour vous. Nous gérons les imprévus et vous tenons informé à chaque étape du processus, garantissant que les travaux sont réalisés selon les normes les plus élevées.</p2>
+            <p>{t('whats_next_text_3_i7')}</p>
           </div>
           <div className="column_5" ref={el => textRefs.current[3] = el}>
-            <p2>Vous avez toujours rêvé de construire votre maison dans le pays de vos ancêtres ? Vous souhaitez offrir un avenir meilleur à vos enfants ? Si la réalisation de ce rêve vous a toujours paru inaccessible, Sabra Habitat est à votre disposition pour répondre à vos aspirations les plus élevées.</p2>
+            <p>{t('whats_next_text_4_i7')}</p>
           </div>
           <div className="buttons_5" ref={buttonRef}>
-            <button className="button_5" onClick={handleContactClick}>Contactez-nous</button>
+            <button className="button_5" onClick={handleContactClick}>{t('contact_us_i7')}</button>
           </div>
         </div>
       </div>

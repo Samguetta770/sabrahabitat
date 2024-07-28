@@ -1,8 +1,12 @@
+// src/Presentation.js
 import React, { useEffect, useRef } from 'react';
 import './Presentation.css';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import i18n from "../i18n";
 
 const Presentation = () => {
+  const { t } = useTranslation();
   const backgroundRef = useRef(null);
   const navigate = useNavigate();
 
@@ -46,12 +50,12 @@ const Presentation = () => {
   return (
     <div className="background fade-in" ref={backgroundRef}>
       <div className="content">
-        <h1>Sabra Habitat</h1>
-        <p>La première société française de construction de maison individuelles en Israël </p>
-        <p className="quote">"Le pays que j’ai accordé à Avraham et Issac je te le donne, et je le donnerais ce pays à ta descendance après toi"  (Berechit 32 ;12)</p>
+        <h1>{t('title')}</h1>
+        <p>{t('description')}</p>
+        <p className="quote">{t('quote')}</p>
         <div className="buttons">
-          <button className="button_p" onClick={handleMoreInfoClick}>En savoir plus</button>
-          <button className="button_p" onClick={handleContactClick}>Voir projet</button>
+          <button className="button_p" onClick={handleMoreInfoClick}>{t('more_info')}</button>
+          <button className="button_p" onClick={handleContactClick}>{t('see_project')}</button>
         </div>
       </div>
     </div>
@@ -59,4 +63,3 @@ const Presentation = () => {
 };
 
 export default Presentation;
-

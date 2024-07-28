@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './SplashScreen.css';
-import logo from "./../Ressources/sabrristouche_gold_logo.png";// Remplacez par le chemin correct de votre logo
+import logo from "../Ressources/sabrristouche_gold_logo.png";// Remplacez par le chemin correct de votre logo
 
 const SplashScreen = ({ onFinish }) => {
   useEffect(() => {

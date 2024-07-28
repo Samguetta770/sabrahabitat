@@ -1,35 +1,39 @@
+// src/Accueil/ExtraitProjets.js
 import React, { useEffect, useState, useRef } from 'react';
-import { useNavigate } from 'react-router-dom'; // Importer useNavigate
+import { useNavigate } from 'react-router-dom';
 import './ExtraitProjets.css';
 import projectImage1 from "./../Ressources/Photo_6.avif";
 import projectImage2 from "./../Ressources/Photo_7.avif";
 import projectImage3 from "./../Ressources/Photo_8.avif";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Assurez-vous que ce chemin est correct
 
 const projects = [
   {
     id: 1,
-    title: 'Construction De Villa Indépendante',
+    titleKey: 'project_1_title',
     image: projectImage1,
-    description: 'Construction De Villa Indépendante',
+    descriptionKey: 'project_1_description',
     link: '/projets#Projet_1',
   },
   {
     id: 2,
-    title: 'Construction De Villa Mitoyenne',
+    titleKey: 'project_2_title',
     image: projectImage2,
-    description: 'Construction De Villa Mitoyenne',
+    descriptionKey: 'project_2_description',
     link: '/projets#Projet_2',
   },
   {
     id: 3,
-    title: 'Renovation De Propriété',
+    titleKey: 'project_3_title',
     image: projectImage3,
-    description: 'Renovation De Propriété',
+    descriptionKey: 'project_3_description',
     link: '/projets#Projet_3',
   },
 ];
 
 const ExtraitProjets = () => {
+  const { t } = useTranslation();
   const [loaded, setLoaded] = useState(false);
   const sectionRef = useRef(null);
   const [projectsVisible, setProjectsVisible] = useState(Array(projects.length).fill(false));
@@ -37,7 +41,7 @@ const ExtraitProjets = () => {
   const titleRef = useRef(null);
   const paragraphRef = useRef(null);
   const buttonRef = useRef(null);
-  const navigate = useNavigate(); // Utiliser useNavigate
+  const navigate = useNavigate();
 
   useEffect(() => {
     const elementsToObserve = [titleRef.current, paragraphRef.current, ...projectRefs.current, buttonRef.current];
@@ -77,7 +81,7 @@ const ExtraitProjets = () => {
               newState[entry.target.dataset.index] = true;
               return newState;
             });
-          }, entry.target.dataset.index * 300); // Délai de 300ms par projet
+          }, entry.target.dataset.index * 300);
         }
       });
     }, { threshold: 0.1 });
@@ -110,9 +114,9 @@ const ExtraitProjets = () => {
 
   return (
     <div className="ExtraitProjets" ref={sectionRef}>
-      <h2 className="fade-in-top" ref={titleRef}>Nos Projets</h2>
+      <h2 className="fade-in-top" ref={titleRef}>{t('our_projects_title')}</h2>
       <p className="fade-in-top" ref={paragraphRef}>
-        Nous croyons que notre travail parle de lui-même, alors <br/>pourquoi ne pas jeter un coup d'œil à quelques-uns de nos projets récents.
+        {t('our_projects_description')}
       </p>
       <div className="project-list">
         {projects.map((project, index) => (
@@ -122,10 +126,10 @@ const ExtraitProjets = () => {
             ref={el => projectRefs.current[index] = el}
             onClick={() => handleProjectClick(project.link)}
           >
-            <img src={project.image} alt={project.title} />
+            <img src={project.image} alt={t(project.titleKey)} />
             <div className="project-overlay">
               <div className="overlay-content">
-                <p>{project.description}</p>
+                <p>{t(project.descriptionKey)}</p>
                 <span className="arrow"></span>
               </div>
             </div>
@@ -135,9 +139,9 @@ const ExtraitProjets = () => {
       <button
         className={`view-projects-button ${loaded ? 'loaded' : ''}`}
         ref={buttonRef}
-        onClick={handleViewProjectsClick} // Ajouter le gestionnaire de clic
+        onClick={handleViewProjectsClick}
       >
-        Voir Projets
+        {t('view_projects_button')}
       </button>
     </div>
   );

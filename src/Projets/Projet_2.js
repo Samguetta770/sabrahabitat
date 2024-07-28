@@ -1,9 +1,13 @@
+// src/Accueil/Projet_2.js
 import React, { useEffect, useRef } from 'react';
 import './Projet_2.css';
-import projectImage1 from "./../Ressources/Photo_7.avif";
+import projectImage1 from './../Ressources/Photo_7.avif';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Assurez-vous que ce chemin est correct
 
 const Projet_2 = () => {
+  const { t } = useTranslation();
   const imageRef = useRef(null);
   const textRef = useRef(null);
   const titleRef = useRef(null);
@@ -39,18 +43,17 @@ const Projet_2 = () => {
 
   return (
     <div className="projet-section_2">
-
       <div className="projet-container_2">
         <div className="text-container_2" ref={textRef}>
-          <h2 className="h2">Construction de maison indépendante</h2>
-          <p className="p_2">Réalisez votre rêve en collaboration avec un second propriétaire. Comportant deux unités distinctes au sein d’un même bâtiment et disposant d’entrées privées, la maison bifamiliale permet de partager les coûts et l’investissement nécessaires, rendant votre rêve plus accessible que jamais.</p>
+          <h2 className="h2" ref={titleRef}>{t('projects_title_2')}</h2>
+          <p className="p_2">{t('independent_house_construction_description_2')}</p>
           <div className="button-container_2">
-            <button className="contact-button_2" onClick={handleContactClick}>Contactez-nous</button>
+            <button className="contact-button_2" onClick={handleContactClick}>{t('contact_us_button_2')}</button>
           </div>
         </div>
         <div className="image-container" ref={imageRef}>
           <div className="image-border_2">
-            <img src={projectImage1} className="img_2" alt="Description of the project" />
+            <img src={projectImage1} className="img_2" alt={t('projects_title_2')} />
           </div>
         </div>
       </div>

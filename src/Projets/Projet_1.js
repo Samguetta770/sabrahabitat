@@ -1,11 +1,13 @@
+// src/Accueil/Projet_1.js
 import React, { useEffect, useRef } from 'react';
 import './Projet_1.css';
 import projectImage1 from './../Ressources/Photo_6.avif';
-import projectImage2 from './../Ressources/Photo_7.avif';
-import projectImage3 from './../Ressources/Photo_8.avif';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Assurez-vous que ce chemin est correct
 
 const Projet_1 = () => {
+  const { t } = useTranslation();
   const imageRef = useRef(null);
   const textRef = useRef(null);
   const titleRef = useRef(null);
@@ -40,21 +42,19 @@ const Projet_1 = () => {
 
   return (
     <div className="projet-section">
-      <h1 className="title" ref={titleRef}>Nos Projets</h1>
+      <h1 className="title" ref={titleRef}>{t('projects_title')}</h1>
       <div className="title-bar"></div>
       <div className="projet-container">
         <div className="image-container" ref={imageRef}>
           <div className="image-border">
-            <img src={projectImage1} className="img" alt="Description of the project" />
+            <img src={projectImage1} className="img" alt={t('independent_house_construction_title')} />
           </div>
         </div>
         <div className="text-container" ref={textRef}>
-          <h2>Construction de maison indépendante</h2>
-          <p>
-            Profitez de notre expertise pour construire la villa de vos rêves, personnalisée selon vos désirs et besoins. Nos architectes créent des plans sur mesure, intégrant des fondations solides et des systèmes modernes. Les finitions intérieures et extérieures sont sélectionnées pour offrir un cadre de vie luxueux, confortable et durable. Avec nous, votre vision devient réalité, alliant qualité et élégance.
-          </p>
+          <h2>{t('independent_house_construction_title')}</h2>
+          <p>{t('independent_house_construction_description')}</p>
           <div className="button-container">
-            <button className="contact-button" onClick={handleContactClick}>Contactez-nous</button>
+            <button className="contact-button" onClick={handleContactClick}>{t('contact_us_button')}</button>
           </div>
         </div>
       </div>

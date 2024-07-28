@@ -1,7 +1,11 @@
+// src/Accueil/Steps.js
 import React, { useEffect, useRef } from 'react';
 import './Steps.css';
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Assurez-vous que ce chemin est correct
 
 const Steps = () => {
+  const { t } = useTranslation();
   const stepsRef = useRef([]);
 
   useEffect(() => {
@@ -35,30 +39,30 @@ const Steps = () => {
 
   return (
     <div className="steps-container">
-      <h2 className="steps-title">Nos équipes proposent une gamme complete de services haut de gamme pour francophone, allant de la recherche du terrain passant par la planification des travaux jusqu'à l'exécution du projet !</h2>
+      <h2 className="steps-title">{t('steps_title_i5')}</h2>
       <div className="steps">
         <div className="step step1" ref={el => stepsRef.current[0] = el}>
           <div className="step-content">
             <h2>1</h2>
-            <p>Contactez-nous et nous planifierons une rencontre dans les plus brefs délais.</p>
+            <p>{t('step_1_i5')}</p>
           </div>
         </div>
         <div className="step step2" ref={el => stepsRef.current[1] = el}>
           <div className="step-content">
             <h2>2</h2>
-            <p>Lors de la première visite, nous recevrons vos exigences et vous conseillerons sur l’orientation à suivre.</p>
+            <p>{t('step_2_i5')}</p>
           </div>
         </div>
         <div className="step step3" ref={el => stepsRef.current[2] = el}>
           <div className="step-content">
             <h2>3</h2>
-            <p>Nos experts évalueront les aspects techniques, financiers ainsi que la réglementation légale de votre projet.</p>
+            <p>{t('step_3_i5')}</p>
           </div>
         </div>
         <div className="step step4" ref={el => stepsRef.current[3] = el}>
           <div className="step-content">
             <h2>4</h2>
-            <p>Nous élaborerons une proposition détaillée incluant l’estimation du budget requis ainsi qu'un délai d’achèvement.</p>
+            <p>{t('step_4_i5')}</p>
           </div>
         </div>
       </div>
@@ -67,4 +71,3 @@ const Steps = () => {
 };
 
 export default Steps;
-

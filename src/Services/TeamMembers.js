@@ -1,33 +1,36 @@
+// src/Accueil/TeamMembers.js
 import React from 'react';
 import './TeamMembers.css';
 import member1 from "./../Ressources/photo_dattente.jpg";
 import member2 from "./../Ressources/photo_dattente.jpg"; // remplacez par le chemin réel des images
 import member3 from "./../Ressources/photo_dattente.jpg"; // remplacez par le chemin réel des images
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Assurez-vous que ce chemin est correct
 
 const TeamMembers = () => {
+  const { t } = useTranslation();
   const members = [
     {
       id: 1,
-      name: 'Amiram',
-      surname: 'Amsellem',
-      description: "Ingénieur civil, PDG de la société de construction \"Amiram Andassa\".\nAvec plus de 20 ans d'expérience dans la gestion de projets de construction.\nTravail en partenariat avec les maires de Jérusalem, Ashkelon et Herzliya.",
+      name: t('team_member_1_name_i6'),
+      surname: t('team_member_1_surname_i6'),
+      description: t('team_member_1_description_i6'),
       image: member1,
       website: 'https://amiram-eng.co.il',
     },
     {
       id: 2,
-      name: 'David',
-      surname: 'Benisti',
-      description: 'Ingénieur civil, chef de projet de construction à Jérusalem.\nSuperviseur de chantier et inspecteur des travaux finis.',
+      name: t('team_member_2_name_i6'),
+      surname: t('team_member_2_surname_i6'),
+      description: t('team_member_2_description_i6'),
       image: member2,
-      website: 'https://www.janesmith.com',
+      website: '',
     },
     {
       id: 3,
-      name: 'Lena',
-      surname: 'Hattab',
-      description: 'Fondatrice de l’agence LMH Interior.\n\nPassionnée d’architecture depuis toujours, elle ouvre son agence à Paris avec plus de 30 Projets à son actif.Architecte d’intérieur et désigner elle pourra vous accompagner tout au long de votre projet.'
-,
+      name: t('team_member_3_name_i6'),
+      surname: t('team_member_3_surname_i6'),
+      description: t('team_member_3_description_i6'),
       image: member3,
       website: 'https://www.instagram.com/lmh.interior?igsh=MWQ5M3llZDcxeGRiNA%3D%3D&utm_source=qr',
     },
@@ -52,3 +55,4 @@ const TeamMembers = () => {
 };
 
 export default TeamMembers;
+

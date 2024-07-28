@@ -1,0 +1,106 @@
+{
+  "title": "Sabra Habitat",
+  "description": "The first French company for individual house construction in Israel",
+  "quote": "\"The land that I granted to Abraham and Isaac I give to you, and I will give this land to your descendants after you\" (Berechit 32;12)",
+  "more_info": "Learn more",
+  "see_project": "See project",
+  "who_we_are": "Who are we?",
+  "who_we_are_text": "Sabra Habitat is a project management company based in Israel, dedicated to assisting French speakers residing in France and Israel in the realization of their real estate projects.<br/><br/>With local expertise and a team of qualified professionals, we guarantee comprehensive support from design to completion.<br/><br/>Our commitment is based on values of trust, transparency, and quality, ensuring adherence to deadlines and the most demanding standards.<br/><br/>By choosing Sabra Habitat, you benefit from a reliable partner capable of turning your ambitions into concrete and sustainable achievements.<br/><br/>",
+  "contact_us": "Contact us",
+
+  "construction_project_manager_title": "What is a construction project manager?",
+  "construction_project_manager_description": "A construction project manager plays a central role in the success of your project. They coordinate and oversee all phases of construction, from land acquisition, through site planning, to final project completion.<br/><br/><strong>• Comprehensive coordination:</strong><br/>Sabra Habitat brings together all stakeholders, including legal specialists, interior architects, engineers, suppliers, and subcontractors. This management ensures smooth communication and optimal coordination, minimizing risks of delays and misunderstandings.<br/><br/><strong>• Administrative support:</strong><br/>Our legal experts ensure compliance with all local and national regulations. We handle all necessary administrative procedures, from finding the right land to obtaining building permits, freeing you from administrative and legal complexities.<br/><br/><strong>• Economic management:</strong><br/>Hiring a project manager offers significant economic advantages. Through rigorous planning and strict budget management, we optimize costs and avoid unnecessary expenses. Our network of reliable suppliers and subcontractors allows us to negotiate the best rates, offering substantial savings. Meeting deadlines avoids costs associated with project extensions, while high-quality work enhances your real estate investment in the long term.<br/><br/><strong>• Land acquisition:</strong><br/>Thanks to its holding company \"amiram-eng.co.il\" and its involvement in multiple projects across Israel, Sabra Habitat finds land with unique advantages at unbeatable prices.<br/><br/>By choosing Sabra Habitat, you benefit from the expertise and support of a dedicated construction project manager, turning your ideas into reality while offering you a serene and stress-free experience.",
+  "construction_project_manager_contact_us": "Contact us",
+
+
+  "our_projects_title": "Our Projects",
+  "our_projects_description": "We believe our work speaks for itself, so why not take a look at some of our recent projects.",
+  "view_projects_button": "View Projects",
+  "project_1_title": "Independent Villa Construction",
+  "project_1_description": "Independent Villa Construction",
+  "project_2_title": "Semi-detached Villa Construction",
+  "project_2_description": "Semi-detached Villa Construction",
+  "project_3_title": "Property Renovation",
+  "project_3_description": "Property Renovation",
+
+  "home": "Home",
+  "services": "Services",
+  "projects": "Projects",
+  "contact": "Contact",
+
+  "projects_title": "Our Projects",
+  "independent_house_construction_title": "Independent House Construction",
+  "independent_house_construction_description": "Take advantage of our expertise to build the villa of your dreams, personalized according to your desires and needs. Our architects create custom plans, integrating solid foundations and modern systems. The interior and exterior finishes are selected to offer a luxurious, comfortable, and durable living environment. With us, your vision becomes reality, combining quality and elegance.",
+  "contact_us_button": "Contact Us",
+  "projects_title_2": "Independent House Construction",
+  "independent_house_construction_description_2": "Achieve your dream in collaboration with a second owner. Consisting of two distinct units within the same building and with private entrances, the duplex house allows sharing the necessary costs and investment, making your dream more accessible than ever.",
+  "contact_us_button_2": "Contact Us",
+  "property_renovation_title": "Property Renovation",
+  "property_renovation_description": "Transform and expand your newly acquired home according to your tastes and needs with our personalized renovation services to create the perfect living space.",
+  "contact_us_button_3": "Contact Us",
+
+  "contact_us_title_i1": "CONTACT US",
+  "address_label_i1": "Address",
+  "phone_label_i1": "Phone",
+  "email_label_i1": "Email",
+  "address_details_i1": "Sabra Habitat LTD<br />11 Pais Street,<br />Rishon Letzion, Israel <br />7526001",
+  "phone_fr_i1": "+33 6 12 50 68 38",
+  "phone_il_i1": "+972 53 9 34-3557",
+  "email_i1": "contact@sabrahabitat.com",
+
+  "first_name_i2": "First Name*",
+  "last_name_i2": "Last Name*",
+  "email_i2": "Email",
+  "phone_i2": "Phone*",
+  "message_i2": "Message*",
+  "marketing_preferences_i2": "Marketing Preferences*",
+  "marketing_email_i2": "Email",
+  "marketing_postal_i2": "Postal",
+  "marketing_telephone_i2": "Telephone",
+  "marketing_none_i2": "None",
+  "submit_i2": "Submit",
+  "thank_you_message_i2": "Thank you for your message!",
+  "success_message_i2": "Thank you for contacting us. Your message has been received and will be processed as soon as possible. <br/> We appreciate your trust and interest in our company.<br/> Feel free to visit our website for more information and services we offer.",
+
+  "services_management_construction_title_i3": "Our management and construction services",
+  "services_management_construction_description_i3": "With its many services, Sabra Habitat ensures complete management <br/>and realization of your projects!",
+  "learn_more_i3": "Learn more",
+
+  "why_choose_us_title_i4": "WHY CHOOSE US FOR YOUR RENOVATION AND CONSTRUCTION PROJECTS?",
+  "why_choose_us_description_i4": "Experienced and skilled, we work closely with all trades in the construction industry, which allows us to ensure service to the highest standards, regardless of the size of the project.",
+  "team_professional_experienced_i4": "A professional and experienced team",
+  "land_acquisition_israel_i4": "Land acquisition throughout Israel",
+  "full_specialized_service_i4": "Full and specialized service",
+  "personalized_legal_services_i4": "Personalized legal services",
+  "contact_us_i4": "Contact us",
+
+  "steps_title_i5": "Our teams offer a full range of premium services for French speakers, from land search and planning to project execution!",
+  "step_1_i5": "Contact us and we will schedule a meeting as soon as possible.",
+  "step_2_i5": "During the first visit, we will receive your requirements and advise you on the direction to take.",
+  "step_3_i5": "Our experts will assess the technical, financial, and legal aspects of your project.",
+  "step_4_i5": "We will develop a detailed proposal including the estimated budget and a completion timeline.",
+
+
+  "team_member_1_name_i6": "Amiram",
+  "team_member_1_surname_i6": "Amsellem",
+  "team_member_1_description_i6": "Civil engineer, CEO of the construction company \"Amiram Andassa\".\nWith over 20 years of experience in managing construction projects.\nWorks in partnership with the mayors of Jerusalem, Ashkelon, and Herzliya.",
+  "team_member_2_name_i6": "David",
+  "team_member_2_surname_i6": "Benisti",
+  "team_member_2_description_i6": "Civil engineer, construction project manager in Jerusalem.\nSite supervisor and finished works inspector.",
+  "team_member_3_name_i6": "Lena",
+  "team_member_3_surname_i6": "Hattab",
+  "team_member_3_description_i6": "Founder of LMH Interior agency.\n\nPassionate about architecture since always, she opened her agency in Paris with over 30 projects to her credit. Interior architect and designer, she can accompany you throughout your project.",
+
+  "whats_next_title_i7": "WHAT'S NEXT?",
+  "whats_next_text_1_i7": "Once you contact us with your construction project management request, we will arrange a meeting to assess your needs. During this meeting, our experts will listen carefully to your space and budget requirements. We will guide you through the maze of regulations and legal procedures involved in a construction project, whether you know exactly what you want or need inspiration.",
+  "whats_next_text_2_i7": "We will carefully analyze the figures and provide you with an honest and competitive quote for your renovation or construction project. You will know exactly how long the work will take and we will schedule the work accordingly.",
+  "whats_next_text_3_i7": "At Sabra Habitat, we take care of coordination with builders, architects, engineers, and other workers, so you only have to deal with us. This makes the entire project much less stressful for you. We handle the unexpected and keep you informed at every step of the process, ensuring that the work is done to the highest standards.",
+  "whats_next_text_4_i7": "Have you always dreamed of building your house in the land of your ancestors? Do you want to offer a better future for your children? If realizing this dream has always seemed unattainable, Sabra Habitat is at your disposal to meet your highest aspirations.",
+  "contact_us_i7": "Contact us"
+
+}
+
+
+
+
+

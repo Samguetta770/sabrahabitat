@@ -1,3 +1,4 @@
+// src/Accueil/TextPhoto_4.js
 import React, { useEffect, useRef } from 'react';
 import './TextPhoto_4.css';
 import img1 from "./../Ressources/Photo_10.jpg";
@@ -6,8 +7,11 @@ import icon2 from "./../Ressources/Localisation_Good.png";
 import icon3 from "./../Ressources/Maison_Good.png";
 import icon4 from "./../Ressources/Note_Good.png";
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Assurez-vous que ce chemin est correct
 
 const TextPhoto_4 = () => {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const iconRefs = useRef([]);
   const navigate = useNavigate();
@@ -74,29 +78,29 @@ const TextPhoto_4 = () => {
         </div>
         <div className="text-columns_4">
           <div className="column_4">
-            <h2>POURQUOI NOUS CHOISIR POUR VOS PROJETS DE RENOVATION ET DE CONSTRUCTION ?</h2>
-            <p>Expérimentés et compétents, nous travaillons en étroite collaboration avec tous les corps de métiers du BTP, ce qui nous permet, quelle que soit l’ampleur du projet, d’assurer un service aux normes les plus élevées. </p>
+            <h2>{t('why_choose_us_title_i4')}</h2>
+            <p>{t('why_choose_us_description_i4')}</p>
           </div>
           <div className="icon-section_4">
             <div className="icon-item_4" ref={el => iconRefs.current[0] = el}>
-              <img src={icon1} alt="Équipe professionnelle et expérimentée" />
-              <p style={{ textAlign: 'center',justifyContent: 'center' }}>Une équipe professionnelle et expérimentée</p>
+              <img src={icon1} alt={t('team_professional_experienced_i4')} />
+              <p style={{ textAlign: 'center', justifyContent: 'center' }}>{t('team_professional_experienced_i4')}</p>
             </div>
             <div className="icon-item_4" ref={el => iconRefs.current[1] = el}>
-              <img src={icon2} alt="Nous travaillons dans tout le Devon occidental" />
-              <p style={{ textAlign: 'center',justifyContent: 'center' }}>Nous travaillons dans tout Israël</p>
+              <img src={icon2} alt={t('land_acquisition_israel_i4')} />
+              <p style={{ textAlign: 'center', justifyContent: 'center' }}>{t('land_acquisition_israel_i4')}</p>
             </div>
             <div className="icon-item_4" ref={el => iconRefs.current[2] = el}>
-              <img src={icon3} alt="Services spécialisés haut de gamme" style={{ paddingLeft: '0.3em' }}/>
-              <p style={{ textAlign: 'center',justifyContent: 'center' }}>Services spécialisés haut de gamme</p>
+              <img src={icon3} alt={t('full_specialized_service_i4')} style={{ paddingLeft: '0.3em' }} />
+              <p style={{ textAlign: 'center', justifyContent: 'center' }}>{t('full_specialized_service_i4')}</p>
             </div>
             <div className="icon-item_4" ref={el => iconRefs.current[3] = el}>
-              <img src={icon4} alt="Collaboration avec des architectes et designers" />
-              <p style={{ textAlign: 'center' ,justifyContent: 'center'}}>Services juridique personnalisé</p>
+              <img src={icon4} alt={t('personalized_legal_services_i4')} />
+              <p style={{ textAlign: 'center', justifyContent: 'center' }}>{t('personalized_legal_services_i4')}</p>
             </div>
           </div>
           <div className="buttons">
-            <button className="button_4" onClick={handleContactClick}>Contactez nous</button>
+            <button className="button_4" onClick={handleContactClick}>{t('contact_us_i4')}</button>
           </div>
         </div>
       </div>
@@ -105,4 +109,3 @@ const TextPhoto_4 = () => {
 };
 
 export default TextPhoto_4;
-

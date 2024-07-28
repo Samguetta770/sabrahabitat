@@ -7,7 +7,7 @@
   font-size: 1.5em;
   margin: 0;
   box-sizing: border-box;
-  background-color: #1C382D;
+  background-color: #2d6e55;
   color: white;
   display: flex;
   justify-content: center;
@@ -53,7 +53,7 @@
 }
 
 .header-link_header:hover {
-  color: #22493A;
+  color: #1C382D;
 }
 
 .show-nav-button-container_header {
