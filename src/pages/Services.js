@@ -7,7 +7,8 @@ import Staff from "../Services/Staff";
 import TextPhoto_4 from "../Services/TextPhoto_4";
 import TextPhoto_5 from "../Services/TextPhoto_5";
 import Footer from "../Accueil/Footer";
-
+import Swipy from "../Services/Swipy";
+import SwippablePhotos from "../Services/SwippablePhotos";
 
 
 const Services = () =>{
@@ -16,10 +17,11 @@ const Services = () =>{
           <div id="projets">
 
           </div>
+
       <Presentation_2/>
        <TextPhoto_4/>
           <div id ="gestion-constru">
-      <TextPhoto_2/>
+              <Swipy/>
           </div>
       <Etapes/>
       <Staff/>

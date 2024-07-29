@@ -114,7 +114,7 @@
   align-self: flex-start;
 }
 .step p{
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
   .step {
     flex: 1 1 100%; /* Chaque carré prend 100% de la largeur sur mobile */

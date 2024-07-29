@@ -49,19 +49,19 @@ const Steps = () => {
         </div>
         <div className="step step2" ref={el => stepsRef.current[1] = el}>
           <div className="step-content">
-            <h2>2</h2>
+            <h2 style={{ color: "white" }}>2</h2>
             <p>{t('step_2_i5')}</p>
           </div>
         </div>
         <div className="step step3" ref={el => stepsRef.current[2] = el}>
           <div className="step-content">
-            <h2>3</h2>
+            <h2 style={{ color: "white" }}>3</h2>
             <p>{t('step_3_i5')}</p>
           </div>
         </div>
         <div className="step step4" ref={el => stepsRef.current[3] = el}>
           <div className="step-content">
-            <h2>4</h2>
+            <h2 style={{ color: "white" }}>4</h2>
             <p>{t('step_4_i5')}</p>
           </div>
         </div>

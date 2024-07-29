@@ -40,7 +40,7 @@ const Presentation_2 = () => {
     <div className="presentation-container_2">
       <div className="background_2 fade-in_2" ref={backgroundRef}>
         <div className="content_2">
-          <h1 className="fade-in-text_2">{t('services_management_construction_title_i3')}</h1>
+<h1 className="fade-in-text_2" style={{ color: "white" }}>{t('services_management_construction_title_i3')}</h1>
           <p className="fade-in-text_2" dangerouslySetInnerHTML={{ __html: t('services_management_construction_description_i3') }}></p>
           <div className="buttons_2 fade-in-text_2">
             <button className="button_2" onClick={handleMoreInfoClick}>{t('learn_more_i3')}</button>

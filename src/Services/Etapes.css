@@ -13,12 +13,13 @@
 main {
   padding-left: 1vw;
   padding-right: 1vw;
-  padding-bottom: 10vw;
-  padding-top: 2vw;
+  padding-bottom: 1vw;
+  padding-top: 7vw;
 }
 
 @media (max-width: 768px) {
   main {
   margin-top: 0em;
+    padding-top: 0vw;
 }
 }
