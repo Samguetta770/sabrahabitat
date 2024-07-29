@@ -50,7 +50,7 @@ const Presentation = () => {
   return (
     <div className="background fade-in" ref={backgroundRef}>
       <div className="content">
-        <h1>{t('title')}</h1>
+<h1 style={{ color: 'white' }}>{t('title')}</h1>
         <p>{t('description')}</p>
         <p className="quote">{t('quote')}</p>
         <div className="buttons">

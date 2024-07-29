@@ -61,7 +61,7 @@ const TextPhoto = () => {
     <div className="new-section-TP">
       <div className="content">
         <div className="text-container-TP">
-          <h2 className="fade-in-top" ref={titleRef}>{t('construction_project_manager_title')}</h2>
+          <h2 className="fade-in-top" ref={titleRef} style ={{color:"white"}}>{t('construction_project_manager_title')}</h2>
           <p className="fade-in-left" ref={textRef} dangerouslySetInnerHTML={{ __html: t('construction_project_manager_description') }}></p>
           <div className="buttons-TP">
             <button className="button-TP" onClick={handleContactClick}>{t('construction_project_manager_contact_us')}</button>
