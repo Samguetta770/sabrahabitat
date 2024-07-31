@@ -21,6 +21,9 @@ const SwippablePhotos = ({ services, backgroundImage }) => {
   return (
     <div className="swipe-container" {...handlers} style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="overlay">
+        <div className="page-indicator-container">
+          <div className="page-indicator">{`${index + 1}/${numPages}`}</div>
+        </div>
         {currentServices.map((service, i) => (
           <div key={i} className="service-card">
             <h4>{`${startServiceIndex + i + 1}. ${service.title}`}</h4>

@@ -24,6 +24,25 @@
   box-sizing: border-box; /* Assurer que padding est pris en compte dans la taille totale */
 }
 
+.page-indicator-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.page-indicator {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
 .service-card {
   width : 80%;
   flex: 1;
@@ -98,13 +117,14 @@ h2 {
 }
 
 @media (max-width: 768px) {
-
-  .service-card{
-
+  .service-card {
   }
 
-
-  p{
+  p {
     font-size: 0.9em;
+  }
+
+  .dots-container {
+    bottom: 10px; /* Ajustez la position pour les téléphones */
   }
 }

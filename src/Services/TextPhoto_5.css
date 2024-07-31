@@ -125,7 +125,7 @@
 @media (max-width: 768px) {
   .new-section_5 {
     flex-direction: column;
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 1em;
     padding-left: 1em;
     padding-right: 1em;
@@ -163,7 +163,7 @@
   }
 
   .new-section_5 .button_5 {
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 0.4em 0.8em;
   }
 }
