@@ -31,38 +31,40 @@ const ContactForm = () => {
   }, []);
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    const formData = {
-      firstName: event.target.firstName.value,
-      lastName: event.target.lastName.value,
-      email: event.target.email.value,
-      phone: event.target.phone.value,
-      message: event.target.message.value,
-      marketing: Array.from(event.target.marketing).filter(input => input.checked).map(input => input.value)
-    };
+  const formData = {
+    firstName: event.target.firstName.value,
+    lastName: event.target.lastName.value,
+    email: event.target.email.value,
+    phone: event.target.phone.value,
+    message: event.target.message.value,
+    marketing: Array.from(event.target.marketing).filter(input => input.checked).map(input => input.value)
+  };
 
-    try {
-      const response = await fetch('http://localhost:5000/api/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
+  try {
+    const response = await fetch('https://your-vercel-deployment-url/api/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
 
-      const result = await response.json();
-      if (response.ok) {
-        console.log('Success:', result);
-        setIsSubmitted(true);
-      } else {
-        console.error('Error:', result.message);
-        alert('Erreur lors de l\'envoi des données: ' + result.message);
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('Erreur lors de l\'envoi des données');
+    const result = await response.json();
+    if (response.ok) {
+      console.log('Success:', result);
+      setIsSubmitted(true);
+    } else {
+      console.error('Error:', result.message);
+      alert('Erreur lors de l\'envoi des données: ' + result.message);
     }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('Erreur lors de l\'envoi des données');
+  }
+
+
   };
 
   return (
