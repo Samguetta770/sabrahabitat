@@ -35,19 +35,22 @@ worksheet = spreadsheet.sheet1
 def submit_data():
     try:
         data = request.json
+        if not data:
+            raise ValueError("No data provided")
         data_list = [
-            data['firstName'],
-            data['lastName'],
-            data['email'],
-            data['phone'],
-            data['message'],
-            ','.join(data['marketing'])  # Convertit la liste de préférences de marketing en une chaîne
+            data.get('firstName'),
+            data.get('lastName'),
+            data.get('email'),
+            data.get('phone'),
+            data.get('message'),
+            ','.join(data.get('marketing', []))  # Convertit la liste de préférences de marketing en une chaîne
         ]
         worksheet.append_row(data_list)
         return jsonify({"message": "Data successfully written to Google Sheet"})
     except Exception as e:
-        print(f"Error: {e}")
-        return jsonify({"message": f"Error: {e}"}), 500
+        error_message = f"Error: {str(e)}"
+        print(error_message)
+        return jsonify({"message": error_message}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

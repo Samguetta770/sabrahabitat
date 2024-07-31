@@ -5,6 +5,7 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const wrapperRef = useRef(null);
   const containerRef = useRef(null);
+  const KOKO = 'api/submit';
 
   useEffect(() => {
     const wrapperElement = wrapperRef.current;
@@ -43,7 +44,7 @@ const ContactForm = () => {
     };
 
     try {
-      const response = await fetch('api/submit', {
+      const response = await fetch(KOKO, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
