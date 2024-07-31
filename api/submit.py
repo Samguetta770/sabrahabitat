@@ -1,32 +1,31 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-from dotenv import load_dotenv
+from google.oauth2.service_account import Credentials
 import os
-
-load_dotenv()  # Charge les variables d'environnement depuis le fichier .env
 
 app = Flask(__name__)
 CORS(app)
 
-# Configuration de l'API Google Sheets
-scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-credentials = {
-    "type": os.getenv("TYPE"),
-    "project_id": os.getenv("PROJECT_ID"),
+# Identifiants du compte de service Google à partir des variables d'environnement
+service_account_info = {
+    "type": "service_account",
+    "project_id": os.getenv("GPROJECT_ID"),
     "private_key_id": os.getenv("PRIVATE_KEY_ID"),
-    "private_key": os.getenv("PRIVATE_KEY").replace('\\n', '\n'),
+    "private_key": os.getenv("PRIVATE_KEY").replace("\\n", "\n"),  # Remplacer les \\n par \n
     "client_email": os.getenv("CLIENT_EMAIL"),
     "client_id": os.getenv("CLIENT_ID"),
     "auth_uri": os.getenv("AUTH_URI"),
     "token_uri": os.getenv("TOKEN_URI"),
     "auth_provider_x509_cert_url": os.getenv("AUTH_PROVIDER_X509_CERT_URL"),
-    "client_x509_cert_url": os.getenv("CLIENT_X509_CERT_URL")
+    "client_x509_cert_url": os.getenv("CLIENT_X509_CERT_URL"),
+    "universe_domain": "googleapis.com"
 }
 
-creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
-client = gspread.authorize(creds)
+# Configuration de l'API Google Sheets
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+credentials = Credentials.from_service_account_info(service_account_info, scopes=scope)
+client = gspread.authorize(credentials)
 
 # Ouvrir la feuille Google Sheets
 spreadsheet = client.open("Benif_Sabra_Habitat")
