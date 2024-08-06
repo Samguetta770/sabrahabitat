@@ -11,6 +11,39 @@
   position: relative;
   box-sizing: border-box; /* Assurer que padding est pris en compte dans la taille totale */
 }
+/* SwippablePhotos.css */
+/* SwippablePhotos.css */
+.arrowi {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  border: none; /* Assurez-vous qu'il n'y ait pas de bordure qui pourrait apparaître */
+}
+
+.arrowi-left {
+  left: 0.2em;
+}
+
+.arrowi-right {
+  right: 0.2em;
+}
+
+.arrowi svg {
+  width: 20px;
+  height: 20px;
+  fill: white; /* Changer la couleur des flèches en blanc */
+}
+
 
 .overlay {
   background-color: rgba(0, 128, 0, 0.5); /* Filtre vert */

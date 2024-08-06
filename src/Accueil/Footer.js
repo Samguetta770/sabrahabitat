@@ -17,16 +17,20 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-info">
         <h2>Sabra Habitat LTD</h2>
-        <p>11 Pais Street,
-               Rishon Letzion <br/>    Israel
-               7526001</p>
+        <p>11 Pais Street,<br/>
+          Rishon Letzion<br/>
+          Israel<br/>
+          7526001
+        </p>
         <p>
           <a href="tel:+972539343557" className="contact-link">
-            <img src={img1} alt="Téléphone Bleu" className="phone-icon" />+972 53 9 34-3557
+            <img src={img1} alt="Téléphone Blanc" className="phone-icon" />+972 53 9 34-3557
           </a>
         </p>
         <p>
-          <a href="mailto:contact@sabrahabitat.com" className="contact-link"><img src={img2} alt="Téléphone Bleu" className="mail-icon" />contact@sabrahabitat.com</a>
+          <a href="mailto:contact@sabrahabitat.com" className="contact-link">
+            <img src={img2} alt="Mail Blanc" className="mail-icon" />contact@sabrahabitat.com
+          </a>
         </p>
       </div>
       <div className="footer-links">
@@ -38,9 +42,16 @@ const Footer = () => {
       <div className="footer-logos">
         <img src={logo} alt="Company Logo" className="footer-logos-benif" />
       </div>
+      <div className="footer-bottom">
+        <p>© Sabra Habitat Constructeur de Biens |
+          <Link to="/PrivacyPolicy" className="footer-link"> Privacy Policy</Link> |
+          <a href="https://wa.me/+972542079559" className="footer-link"> Website design by Samuel Guetta</a>
+        </p>
+      </div>
     </div>
   );
 };
 
-export default Footer;
 
+
+export default Footer;

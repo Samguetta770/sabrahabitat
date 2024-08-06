@@ -9,7 +9,7 @@ import './App.css'
 import WhatsAppButton from "./Accueil/WhatsAppButton";
 import header from "./Accueil/Header";
 import Header from "./Accueil/Header";
-
+import PrivacyPolicy from "./Accueil/PrivacyPolicy";
 
 const App = () => {
   return (
@@ -22,6 +22,8 @@ const App = () => {
         <Route path="/services" element={<Services/>} />
         <Route path="/projets" element={<Projets/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+
 
 
     </Routes>
