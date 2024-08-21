@@ -28,7 +28,7 @@ const ContactChamp = () => {
           <div>
             <p className="contact-label">{t('phone_label_i1')}</p>
             <p>
-              <a href="tel:+33612506838" className="contact-link">
+              <a href="tel:+33186981370" className="contact-link">
                 <img src={flagFr} alt="Drapeau Français" className="flag-icon" /> {t('phone_fr_i1')}
               </a>
             </p>
