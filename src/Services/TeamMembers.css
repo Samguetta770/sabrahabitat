@@ -9,7 +9,7 @@
 .team-member {
   position: relative;
   width: 20em; /* Ajusté pour une meilleure adaptation à l'écran */
-  margin: 1em;
+  margin: 2em;
   overflow: hidden;
   transition: transform 0.5s ease;
   display: flex;
@@ -18,16 +18,20 @@
 }
 
 .member-image-container {
-  width: 100%; /* Ajusté pour occuper toute la largeur du conteneur */
-  height: auto; /* Ajusté pour maintenir le ratio */
+  width: 100%;
+  height: 0;
+  padding-bottom: 140%; /* Définit une hauteur égale à la largeur pour obtenir un carré */
   overflow: hidden;
   position: relative;
 }
 
 .member-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   transition: transform 0.5s ease;
 }
 
@@ -107,37 +111,61 @@
 /* Styles spécifiques pour les téléphones */
 @media (max-width: 600px) {
   .team-members-container {
-    margin-right: 3em;
-    margin-left: 1em;
+    margin-right: 2em;
+    margin-left: 2em;
     flex-direction: column;
     align-items: center;
+    gap: 15px; /* Espace entre les membres pour un look plus aéré */
   }
 
   .team-member {
-    width: 100%; /* Prendre toute la largeur de l'écran sur mobile */
+    width: 90%; /* Réduit légèrement la largeur pour créer un espace autour de chaque membre */
+    max-width: 300px; /* Limite la taille maximale pour un affichage cohérent */
+    position: relative;
+    overflow: hidden;
   }
-  .member-image{
-    width: 80%;
-  }
-  .member-website {
-  color: black;
-    font-style: italic/* Utilisez la même couleur que le reste de la description */
 
-}
+  .member-image-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 120%; /* Carré plus petit pour mobile */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 10px; /* Coins arrondis pour un aspect plus doux et élégant */
+  }
 
   .member-info {
-    position: static;
-    background: none;
-    color: black;
-    padding: 10px 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Même style que sur ordinateur */
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    padding: 20px;
     box-sizing: border-box;
-    opacity: 1;
-    transform: none;
-      justify-content: center;
+    position: absolute;
+    bottom: -100%; /* Caché par défaut */
+    left: 0;
+    transition: bottom 0.5s ease;
   }
 
-  .team-member:hover .member-info {
-    bottom: auto;
+  .team-member:active .member-info,
+  .team-member:focus-within .member-info {
+    bottom: 0; /* Affiche le texte lorsqu'on clique ou touche l'image */
+  }
+
+  .member-website {
+    color: white;
+    font-style: italic;
+    font-size: 0.85em;
+    text-decoration: underline;
   }
 }
+
 
